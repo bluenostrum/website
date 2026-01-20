@@ -4,7 +4,7 @@
       "target": {                                                                             
         "namespace": "android_app",                                                           
         "package_name": "com.bluenostrum.bluenostrum.dev",                                    
-        "sha256_cert_fingerprints": ["YOUR_SHA256_FINGERPRINT"]                               
+        "sha256_cert_fingerprints": ["70:3A:AC:84:A3:5B:CA:7D:D1:19:86:63:0C:44:CA:E3:9C:F6:7E:B2:84:DD:17:ED:98:81:AE:2D:E3:96:BA:1F"]                               
       }                                                                                       
     }                                                                                         
   ]                                                                                           
