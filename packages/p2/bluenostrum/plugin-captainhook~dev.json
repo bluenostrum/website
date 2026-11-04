@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "2a687ec5d52964c44023e01ddc1269d7db54e8df"
+                    "reference": "b72855df4883cdd51dfe8f53b12ae05f42241a21"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/2a687ec5d52964c44023e01ddc1269d7db54e8df",
-                    "reference": "2a687ec5d52964c44023e01ddc1269d7db54e8df",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/b72855df4883cdd51dfe8f53b12ae05f42241a21",
+                    "reference": "b72855df4883cdd51dfe8f53b12ae05f42241a21",
                     "shasum": ""
                 },
                 "require": {
@@ -39,7 +39,7 @@
                     "symfony/console": "^8.1",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-04T17:26:02+00:00",
+                "time": "2026-11-04T18:05:15+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -98,7 +98,7 @@
                 ],
                 "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.2.1",
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             }

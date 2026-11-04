@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "e65aaccc6fe158a90437b8bfd44f6a5f02e6dfd5"
+                    "reference": "607f95d34ce9ccd7d349e19a753a0058317ce2f7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/e65aaccc6fe158a90437b8bfd44f6a5f02e6dfd5",
-                    "reference": "e65aaccc6fe158a90437b8bfd44f6a5f02e6dfd5",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/607f95d34ce9ccd7d349e19a753a0058317ce2f7",
+                    "reference": "607f95d34ce9ccd7d349e19a753a0058317ce2f7",
                     "shasum": ""
                 },
                 "require": {
@@ -37,7 +37,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-04T17:49:29+00:00",
+                "time": "2026-11-04T18:05:21+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

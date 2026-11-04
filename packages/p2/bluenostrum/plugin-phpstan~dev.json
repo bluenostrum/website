@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpstan.git",
-                    "reference": "13e837934b7232dcf45950d1f5e4745335282b7f"
+                    "reference": "018b3c05ec40b7e8ed69f41b97317a32c3cb61fe"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/13e837934b7232dcf45950d1f5e4745335282b7f",
-                    "reference": "13e837934b7232dcf45950d1f5e4745335282b7f",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/018b3c05ec40b7e8ed69f41b97317a32c3cb61fe",
+                    "reference": "018b3c05ec40b7e8ed69f41b97317a32c3cb61fe",
                     "shasum": ""
                 },
                 "require": {
@@ -46,7 +46,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-04T17:45:15+00:00",
+                "time": "2026-11-04T18:05:20+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

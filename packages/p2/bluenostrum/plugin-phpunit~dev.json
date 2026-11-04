@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "3e74a8bc0ff8138dab077046dc28fc55d0fd25d5"
+                    "reference": "a975bca8dbe5326772c99d3d767766f993c5beda"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/3e74a8bc0ff8138dab077046dc28fc55d0fd25d5",
-                    "reference": "3e74a8bc0ff8138dab077046dc28fc55d0fd25d5",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/a975bca8dbe5326772c99d3d767766f993c5beda",
+                    "reference": "a975bca8dbe5326772c99d3d767766f993c5beda",
                     "shasum": ""
                 },
                 "require": {
@@ -36,7 +36,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-04T17:51:14+00:00",
+                "time": "2026-11-04T18:05:20+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
