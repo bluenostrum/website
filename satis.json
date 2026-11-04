@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/composer/satis/main/res/satis-schema.json",
+    "name": "bluenostrum/packages",
+    "description": "Composer packages of bluenostrum",
+    "homepage": "https://bluenostrum.com/packages",
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/bluenostrum/framework" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-captainhook" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-composer" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-dependency-analyser" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-infection" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-phpcs" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-phpstan" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-phpunit" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-psalm" },
+        { "type": "vcs", "url": "https://github.com/bluenostrum/plugin-rector" }
+    ],
+    "require-all": true,
+    "require-dependencies": false,
+    "require-dev-dependencies": false,
+    "output-html": false
+}

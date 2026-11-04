@@ -1,0 +1,1375 @@
+{
+    "packages": {
+        "bluenostrum/plugin-captainhook": [
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "0e989447ed7d69c44f52f80a06bb91d50749d031"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/0e989447ed7d69c44f52f80a06bb91d50749d031",
+                    "reference": "0e989447ed7d69c44f52f80a06bb91d50749d031",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T08:59:22+00:00",
+                "bin": [
+                    "bin/bluenostrum-pipeline"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-pipeline": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "lib/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-pipeline bin/hook-block-self-credit lib/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l lib/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "dc8cb60722def6e67a0e6cd57fbf9c4c169c8739"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/dc8cb60722def6e67a0e6cd57fbf9c4c169c8739",
+                    "reference": "dc8cb60722def6e67a0e6cd57fbf9c4c169c8739",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T09:44:17+00:00",
+                "bin": [
+                    "bin/bluenostrum-pipeline"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-pipeline": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "lib/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-pipeline bin/hook-block-self-credit lib/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l lib/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.0.1",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "fb57f8ae139e57f18f751d1ff705d40b7a39ba7b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/fb57f8ae139e57f18f751d1ff705d40b7a39ba7b",
+                    "reference": "fb57f8ae139e57f18f751d1ff705d40b7a39ba7b",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T09:54:06+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "lib/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit lib/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l lib/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.0.2",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "0292356b72a605851589c26d1566af1d2c3f2964"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/0292356b72a605851589c26d1566af1d2c3f2964",
+                    "reference": "0292356b72a605851589c26d1566af1d2c3f2964",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T16:05:10+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "src/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit src/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l src/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.0.3",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "573b39197b92d23385433fb1b85cf81a5a1cc974"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/573b39197b92d23385433fb1b85cf81a5a1cc974",
+                    "reference": "573b39197b92d23385433fb1b85cf81a5a1cc974",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T16:21:07+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "src/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit src/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l src/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "329896198323dc8b7e6327b716de4bade7495565"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/329896198323dc8b7e6327b716de4bade7495565",
+                    "reference": "329896198323dc8b7e6327b716de4bade7495565",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T16:47:04+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "src/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit src/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l src/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.3.0",
+                "version_normalized": "1.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "07da346328d1b132bade287cf3d30793dde19ea8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/07da346328d1b132bade287cf3d30793dde19ea8",
+                    "reference": "07da346328d1b132bade287cf3d30793dde19ea8",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "ergebnis/composer-normalize": "^2.54",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-10-30T17:02:39+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer phpunit"
+                        ],
+                        "watch": [
+                            "src/",
+                            "captainhook.json",
+                            "captainhook.dev.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit src/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l src/config.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.3.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.4.0",
+                "version_normalized": "1.4.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "d6b26e99f0ba1828537dbdd95f0bb6b144025555"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/d6b26e99f0ba1828537dbdd95f0bb6b144025555",
+                    "reference": "d6b26e99f0ba1828537dbdd95f0bb6b144025555",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "ext-dom": "*",
+                    "ext-libxml": "*",
+                    "ext-tokenizer": "*",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^1.1",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-03T13:35:19+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "check": [
+                                "composer audit",
+                                "composer validate --strict",
+                                "composer normalize --dry-run",
+                                "composer lint",
+                                "composer deps",
+                                "composer phpunit"
+                            ],
+                            "watch": [
+                                "src/",
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "captainhook/captainhook-phar",
+                                        "captainhook/plugin-composer",
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "Used from captainhook.json and the Composer plugin hooks, never from PHP code."
+                                }
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser --config=vendor/bluenostrum/plugin-dependency-analyser/composer-dependency-analyser.php"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit src/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l src/config.php",
+                        "php -l src/doctor.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.4.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "1.5.0",
+                "version_normalized": "1.5.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "90bdfd53279ffcb10bd10e7d01c649c6178cbe53"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/90bdfd53279ffcb10bd10e7d01c649c6178cbe53",
+                    "reference": "90bdfd53279ffcb10bd10e7d01c649c6178cbe53",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "ext-dom": "*",
+                    "ext-libxml": "*",
+                    "ext-tokenizer": "*",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^1.2",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-03T15:01:54+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "check": [
+                                "composer audit",
+                                "composer validate --strict",
+                                "composer normalize --dry-run",
+                                "composer lint",
+                                "composer deps",
+                                "composer phpunit"
+                            ],
+                            "watch": [
+                                "src/",
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                }
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser --config=vendor/bluenostrum/plugin-dependency-analyser/composer-dependency-analyser.php"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "for script in bin/bluenostrum-dev bin/hook-block-self-credit src/pipeline.sh; do bash -n \"$script\" || exit; done",
+                        "php -l src/config.php",
+                        "php -l src/doctor.php"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and check, ci, pre-commit and pre-push pipelines for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/1.5.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "f7a0559a67a03d977b515744d1fbd435f3126338"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/f7a0559a67a03d977b515744d1fbd435f3126338",
+                    "reference": "f7a0559a67a03d977b515744d1fbd435f3126338",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "composer-plugin-api": "^2.6",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T09:14:30+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "watch": [
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "composer/composer"
+                                    ],
+                                    "paths": [
+                                        "src"
+                                    ],
+                                    "reason": "The plugin runs inside Composer, which provides those classes itself; composer-plugin-api is the requirement, and composer/composer serves the analysis and the tests."
+                                },
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "symfony/console"
+                                    ],
+                                    "paths": [
+                                        "src"
+                                    ],
+                                    "reason": "Composer provides symfony/console to a plugin at run time, as it provides its own classes; requiring it would install a copy beside the one Composer runs."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "symfony/process"
+                                    ],
+                                    "paths": [
+                                        "src"
+                                    ],
+                                    "reason": "Composer provides symfony/process to a plugin at run time, as it provides its own classes; the dev requirement serves the tests."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "source": [
+                                "bin/hook-block-self-credit"
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "captainhook"
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    },
+                    "class": "Bluenostrum\\CaptainHook\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "2.0.1",
+                "version_normalized": "2.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "8f3d79add8938c079860bed6f56b3960725094b0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/8f3d79add8938c079860bed6f56b3960725094b0",
+                    "reference": "8f3d79add8938c079860bed6f56b3960725094b0",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "composer-plugin-api": "^2.6",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T10:25:12+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "watch": [
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "composer/composer"
+                                    ],
+                                    "paths": [
+                                        "src"
+                                    ],
+                                    "reason": "The plugin runs inside Composer, which provides those classes itself; composer-plugin-api is the requirement, and composer/composer serves the analysis and the tests."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "symfony/console"
+                                    ],
+                                    "paths": [
+                                        "src"
+                                    ],
+                                    "reason": "Composer provides symfony/console to a plugin at run time, as it provides its own classes; the dev requirement serves the tests."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "symfony/process"
+                                    ],
+                                    "paths": [
+                                        "src"
+                                    ],
+                                    "reason": "Composer provides symfony/process to a plugin at run time, as it provides its own classes; the dev requirement serves the tests."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "source": [
+                                "bin/hook-block-self-credit"
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "captainhook"
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    },
+                    "class": "Bluenostrum\\CaptainHook\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.0.1",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "2.1.0",
+                "version_normalized": "2.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "11fd65fb80ef7ee60d48d75f6d964f346ece325b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/11fd65fb80ef7ee60d48d75f6d964f346ece325b",
+                    "reference": "11fd65fb80ef7ee60d48d75f6d964f346ece325b",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "composer-plugin-api": "^2.6",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T12:14:44+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "watch": [
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "source": [
+                                "bin/hook-block-self-credit"
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "captainhook"
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    },
+                    "class": "Bluenostrum\\CaptainHook\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "2.2.0",
+                "version_normalized": "2.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "3ea6aeba4de36c15e77d70ea2d820a5588f91e5f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/3ea6aeba4de36c15e77d70ea2d820a5588f91e5f",
+                    "reference": "3ea6aeba4de36c15e77d70ea2d820a5588f91e5f",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "composer-plugin-api": "^2.6",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T13:22:25+00:00",
+                "bin": [
+                    "bin/bluenostrum-dev"
+                ],
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "watch": [
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "source": [
+                                "bin/hook-block-self-credit"
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "captainhook"
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    },
+                    "class": "Bluenostrum\\CaptainHook\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "2.2.1",
+                "version_normalized": "2.2.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "2a687ec5d52964c44023e01ddc1269d7db54e8df"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/2a687ec5d52964c44023e01ddc1269d7db54e8df",
+                    "reference": "2a687ec5d52964c44023e01ddc1269d7db54e8df",
+                    "shasum": ""
+                },
+                "require": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "composer-plugin-api": "^2.6",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "composer/xdebug-handler": "^3.0.5",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T17:26:02+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "watch": [
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "source": [
+                                "bin/hook-block-self-credit"
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "captainhook"
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    },
+                    "class": "Bluenostrum\\CaptainHook\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.2.1",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,1097 @@
+{
+    "packages": {
+        "bluenostrum/plugin-rector": [
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "91bdb8ca0c081cb8cb6f05efb9c123441a3a6b4f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/91bdb8ca0c081cb8cb6f05efb9c123441a3a6b4f",
+                    "reference": "91bdb8ca0c081cb8cb6f05efb9c123441a3a6b4f",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "doctrine/coding-standard": "^14.0",
+                    "ergebnis/composer-normalize": "^2.54",
+                    "ext-xdebug": "*",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpstan/phpstan": "^2.3",
+                    "phpunit/phpunit": "^13.4.4",
+                    "ramsey/conventional-commits": "^1.7",
+                    "roave/security-advisories": "dev-latest",
+                    "squizlabs/php_codesniffer": "^4.0",
+                    "tomasvotruba/type-coverage": "^2.5",
+                    "vimeo/psalm": "^6.20"
+                },
+                "time": "2026-10-28T15:37:10+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "dev:audit": [
+                        "@composer audit"
+                    ],
+                    "dev:coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php vendor/bin/phpunit --configuration phpunit.xml.dist"
+                    ],
+                    "dev:fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@dev:phpcbf"
+                    ],
+                    "dev:lint": [
+                        "parallel-lint ./src"
+                    ],
+                    "dev:phpcbf": [
+                        "phpcbf"
+                    ],
+                    "dev:phpcs": [
+                        "phpcs -s --colors"
+                    ],
+                    "dev:phpstan": [
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "dev:phpunit": [
+                        "php vendor/bin/phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "dev:psalm": [
+                        "psalm --config psalm.xml"
+                    ],
+                    "dev:rector": [
+                        "rector process --dry-run"
+                    ],
+                    "dev:test": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@dev:audit",
+                        "@dev:lint",
+                        "@dev:phpcs",
+                        "@dev:rector",
+                        "@dev:phpstan",
+                        "@dev:psalm",
+                        "@dev:phpunit"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/1.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "8744d72e295e16bdf64d1db19ce1447610e9c66d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/8744d72e295e16bdf64d1db19ce1447610e9c66d",
+                    "reference": "8744d72e295e16bdf64d1db19ce1447610e9c66d",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-phpstan": "^1.27",
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "doctrine/coding-standard": "^14.0",
+                    "ergebnis/composer-normalize": "^2.55",
+                    "ext-xdebug": "*",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpstan/phpstan": "^2.3",
+                    "phpunit/phpunit": "^13.4.4",
+                    "ramsey/conventional-commits": "^1.7",
+                    "roave/security-advisories": "dev-latest",
+                    "squizlabs/php_codesniffer": "^4.0",
+                    "tomasvotruba/type-coverage": "^2.5",
+                    "vimeo/psalm": "^6.20",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-10-29T12:42:06+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "dev:audit": [
+                        "@composer audit"
+                    ],
+                    "dev:coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php vendor/bin/phpunit --configuration phpunit.xml.dist"
+                    ],
+                    "dev:fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@dev:phpcbf"
+                    ],
+                    "dev:lint": [
+                        "parallel-lint ./src"
+                    ],
+                    "dev:phpcbf": [
+                        "phpcbf"
+                    ],
+                    "dev:phpcs": [
+                        "phpcs -s --colors"
+                    ],
+                    "dev:phpstan": [
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "dev:phpunit": [
+                        "php vendor/bin/phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "dev:psalm": [
+                        "psalm --config psalm.xml"
+                    ],
+                    "dev:rector": [
+                        "rector process --dry-run"
+                    ],
+                    "dev:test": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@dev:audit",
+                        "@dev:lint",
+                        "@dev:phpcs",
+                        "@dev:rector",
+                        "@dev:phpstan",
+                        "@dev:psalm",
+                        "@dev:phpunit"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/1.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "9781bfddfcfb1a4f44f72be7b17122ddbe29ea54"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9781bfddfcfb1a4f44f72be7b17122ddbe29ea54",
+                    "reference": "9781bfddfcfb1a4f44f72be7b17122ddbe29ea54",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.0.2",
+                    "bluenostrum/plugin-phpcs": "^1.10",
+                    "bluenostrum/plugin-phpstan": "^1.27",
+                    "doctrine/coding-standard": "^14.0",
+                    "ergebnis/composer-normalize": "^2.55",
+                    "ext-xdebug": "*",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "shipmonk/composer-dependency-analyser": "^1.8",
+                    "squizlabs/php_codesniffer": "^4.0",
+                    "tomasvotruba/type-coverage": "^2.5",
+                    "vimeo/psalm": "^6.20",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-10-30T11:09:12+00:00",
+                "type": "library",
+                "extra": {
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=1G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=1G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/1.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "1.2.1",
+                "version_normalized": "1.2.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "c65b1d4626b8648fa05f9ccf3387dfa1dca8141a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/c65b1d4626b8648fa05f9ccf3387dfa1dca8141a",
+                    "reference": "c65b1d4626b8648fa05f9ccf3387dfa1dca8141a",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.0.2",
+                    "bluenostrum/plugin-infection": "^1.0",
+                    "bluenostrum/plugin-phpcs": "^1.11",
+                    "bluenostrum/plugin-phpstan": "^1.27",
+                    "ergebnis/composer-normalize": "^2.55",
+                    "ext-xdebug": "*",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "shipmonk/composer-dependency-analyser": "^1.8",
+                    "vimeo/psalm": "^6.20",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-10-30T16:02:32+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "ci": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer deps",
+                            "composer phpcs",
+                            "composer rector",
+                            "composer phpstan",
+                            "composer psalm",
+                            "composer phpunit",
+                            "composer infection"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "infection": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=1G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=1G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/1.2.1",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "1.2.2",
+                "version_normalized": "1.2.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "b3c9267734155ca5805fc227a4a78be4a2ff53aa"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/b3c9267734155ca5805fc227a4a78be4a2ff53aa",
+                    "reference": "b3c9267734155ca5805fc227a4a78be4a2ff53aa",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.3",
+                    "bluenostrum/plugin-infection": "^1.1",
+                    "bluenostrum/plugin-phpcs": "^1.12",
+                    "bluenostrum/plugin-phpstan": "^1.31",
+                    "ergebnis/composer-normalize": "^2.55",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.4",
+                    "roave/security-advisories": "dev-latest",
+                    "shipmonk/composer-dependency-analyser": "^1.8",
+                    "vimeo/psalm": "^6.20",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-02T11:48:49+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "ci": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer deps",
+                            "composer phpcs",
+                            "composer rector",
+                            "composer phpstan",
+                            "composer psalm",
+                            "composer phpunit",
+                            "composer infection"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "infection": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=1G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=1G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/1.2.2",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "1.3.0",
+                "version_normalized": "1.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "ee4205c5ee7e58365582a8c3b574c8c9cd518f52"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/ee4205c5ee7e58365582a8c3b574c8c9cd518f52",
+                    "reference": "ee4205c5ee7e58365582a8c3b574c8c9cd518f52",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.3",
+                    "bluenostrum/plugin-infection": "^1.1",
+                    "bluenostrum/plugin-phpcs": "^1.12",
+                    "bluenostrum/plugin-phpstan": "^1.32",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "shipmonk/composer-dependency-analyser": "^1.8",
+                    "symfony/process": "^8.1",
+                    "vimeo/psalm": "^7.0.0",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-03T07:58:57+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "ci": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer deps",
+                            "composer phpcs",
+                            "composer rector",
+                            "composer phpstan",
+                            "composer psalm",
+                            "composer phpunit",
+                            "composer infection"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "infection": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/1.3.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "9ad0d9f57b442caf52335d3160aaf9a07a306bf3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9ad0d9f57b442caf52335d3160aaf9a07a306bf3",
+                    "reference": "9ad0d9f57b442caf52335d3160aaf9a07a306bf3",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-04T09:14:59+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer rector"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "nikic/php-parser"
+                                    ],
+                                    "reason": "The rules run inside Rector, whose package bundles the parser in its own vendor/; requiring it would install a second copy."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "phpunit/phpunit",
+                                        "webmozart/assert"
+                                    ],
+                                    "reason": "The PHPUnit and Webmozart rules match those classes in the refactored code and name them only through ::class, which never autoloads them."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "composer/composer"
+                                    ],
+                                    "paths": [
+                                        "src/Composer"
+                                    ],
+                                    "reason": "The plugin runs inside Composer, which provides those classes itself; composer-plugin-api is the requirement, and composer/composer serves the analysis and the tests."
+                                },
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "symfony/console"
+                                    ],
+                                    "paths": [
+                                        "src/Composer"
+                                    ],
+                                    "reason": "Composer provides symfony/console to a plugin at run time, as it provides its own classes; requiring it would install a copy beside the one Composer runs."
+                                }
+                            ]
+                        },
+                        "phpcs": {
+                            "exclude": [
+                                {
+                                    "paths": [
+                                        "tests/Rule/*/Fixture/*"
+                                    ],
+                                    "reason": "Rector rule fixtures hold input and expected output; they are not code to style."
+                                }
+                            ]
+                        },
+                        "phpstan": {
+                            "excludePaths": [
+                                {
+                                    "paths": [
+                                        "tests/Rule/*/Fixture/*"
+                                    ],
+                                    "reason": "Rector rule fixtures hold input and expected output; they are not code to analyse."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "rector",
+                            "verify": [
+                                "rector"
+                            ]
+                        },
+                        "psalm": {
+                            "suppress": [
+                                {
+                                    "issue": "PropertyNotSetInConstructor",
+                                    "paths": [
+                                        "src/Rule"
+                                    ],
+                                    "reason": "Rector sets AbstractRector's services through autowire() after construction."
+                                },
+                                {
+                                    "issue": "UnresolvableInclude",
+                                    "paths": [
+                                        "tests/PhpStanParityTest.php"
+                                    ],
+                                    "reason": "The parity test's autoloader includes the fixture halves it writes at run time."
+                                }
+                            ]
+                        },
+                        "rector": {
+                            "skip": [
+                                {
+                                    "paths": [
+                                        "tests/Rule/*/Fixture/*"
+                                    ],
+                                    "reason": "Rector rule fixtures hold input and expected output; they are not code to rewrite."
+                                }
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Rector\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run --config config/rector.php"
+                    ],
+                    "rector-fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --config config/rector.php"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-rector",
+                "version": "2.1.0",
+                "version_normalized": "2.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "2ba7bcc293b10ca12e463704b0baac0efafbfa87"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/2ba7bcc293b10ca12e463704b0baac0efafbfa87",
+                    "reference": "2ba7bcc293b10ca12e463704b0baac0efafbfa87",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-04T12:16:02+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer rector"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "nikic/php-parser"
+                                    ],
+                                    "reason": "The rules run inside Rector, whose package bundles the parser in its own vendor/; requiring it would install a second copy."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "phpunit/phpunit",
+                                        "webmozart/assert"
+                                    ],
+                                    "reason": "The PHPUnit and Webmozart rules match those classes in the refactored code and name them only through ::class, which never autoloads them."
+                                }
+                            ]
+                        },
+                        "phpcs": {
+                            "exclude": [
+                                {
+                                    "paths": [
+                                        "tests/Rule/*/Fixture/*"
+                                    ],
+                                    "reason": "Rector rule fixtures hold input and expected output; they are not code to style."
+                                }
+                            ]
+                        },
+                        "phpstan": {
+                            "excludePaths": [
+                                {
+                                    "paths": [
+                                        "tests/Rule/*/Fixture/*"
+                                    ],
+                                    "reason": "AbstractRectorTestCase writes each fixture's input as a .php file beside it while a test runs, and timed-out Infection mutants can leave one behind; they are not code to analyse."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "rector",
+                            "verify": [
+                                "rector"
+                            ]
+                        },
+                        "psalm": {
+                            "suppress": [
+                                {
+                                    "issue": "PropertyNotSetInConstructor",
+                                    "paths": [
+                                        "src/Rule"
+                                    ],
+                                    "reason": "Rector sets AbstractRector's services through autowire() after construction."
+                                },
+                                {
+                                    "issue": "UnresolvableInclude",
+                                    "paths": [
+                                        "tests/PhpStanParityTest.php"
+                                    ],
+                                    "reason": "The parity test's autoloader includes the fixture halves it writes at run time."
+                                }
+                            ]
+                        },
+                        "rector": {
+                            "skip": [
+                                {
+                                    "paths": [
+                                        "tests/Rule/*/Fixture/*"
+                                    ],
+                                    "reason": "AbstractRectorTestCase writes each fixture's input as a .php file beside it while a test runs, and timed-out Infection mutants can leave one behind; they are not code to rewrite."
+                                }
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Rector\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run --config config/rector.php"
+                    ],
+                    "rector-fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --config config/rector.php"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            }
+        ]
+    }
+}

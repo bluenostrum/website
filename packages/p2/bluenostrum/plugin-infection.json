@@ -1,0 +1,340 @@
+{
+    "packages": {
+        "bluenostrum/plugin-infection": [
+            {
+                "name": "bluenostrum/plugin-infection",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-infection.git",
+                    "reference": "ea3adbb85fb4b0b94397deeb15af214f4f4d14a1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/ea3adbb85fb4b0b94397deeb15af214f4f4d14a1",
+                    "reference": "ea3adbb85fb4b0b94397deeb15af214f4f4d14a1",
+                    "shasum": ""
+                },
+                "require": {
+                    "infection/infection": "^0.35",
+                    "php": "^8.5.12"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.0.2",
+                    "ergebnis/composer-normalize": "^2.54",
+                    "roave/security-advisories": "dev-latest"
+                },
+                "time": "2026-10-30T14:10:54+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint"
+                        ],
+                        "watch": [
+                            "infection.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php -r \"json_decode((string) file_get_contents('infection.json'), flags: JSON_THROW_ON_ERROR);\""
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/1.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-infection/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-infection",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-infection.git",
+                    "reference": "3a14d6fd54932eb66d3acbbf3117fde973b4074c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/3a14d6fd54932eb66d3acbbf3117fde973b4074c",
+                    "reference": "3a14d6fd54932eb66d3acbbf3117fde973b4074c",
+                    "shasum": ""
+                },
+                "require": {
+                    "infection/infection": "^0.35",
+                    "php": "^8.5.12"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.0.2",
+                    "ergebnis/composer-normalize": "^2.54",
+                    "roave/security-advisories": "dev-latest"
+                },
+                "time": "2026-10-30T15:58:00+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "check": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint"
+                        ],
+                        "watch": [
+                            "infection.json"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "scripts": {
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php -r \"json_decode((string) file_get_contents('infection.json'), flags: JSON_THROW_ON_ERROR);\""
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/1.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-infection/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-infection",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-infection.git",
+                    "reference": "38d0068d4d64dbca07fd40c9cef14b58e3cf46db"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/38d0068d4d64dbca07fd40c9cef14b58e3cf46db",
+                    "reference": "38d0068d4d64dbca07fd40c9cef14b58e3cf46db",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "infection/infection": "^0.35",
+                    "php": "^8.5.12"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T09:14:55+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "ci": [
+                                "composer infection"
+                            ],
+                            "watch": [
+                                "infection.json",
+                                "tests/"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unknown-class"
+                                    ],
+                                    "paths": [
+                                        "tests/consumer/project"
+                                    ],
+                                    "reason": "The consumer project loads its class from the copy Infection mutates, not through this repository's autoloader."
+                                },
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "infection/infection"
+                                    ],
+                                    "reason": "The package ships infection.json and the command that runs the executable; no PHP code here references the package's classes."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "composer/composer"
+                                    ],
+                                    "paths": [
+                                        "src/Composer"
+                                    ],
+                                    "reason": "The plugin runs inside Composer, which provides those classes itself; composer-plugin-api is the requirement, and composer/composer serves the analysis and the tests."
+                                },
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "symfony/console"
+                                    ],
+                                    "paths": [
+                                        "src/Composer"
+                                    ],
+                                    "reason": "Composer provides symfony/console to a plugin at run time, as it provides its own classes; requiring it would install a copy beside the one Composer runs."
+                                }
+                            ]
+                        },
+                        "phpcs": {
+                            "exclude": [
+                                {
+                                    "paths": [
+                                        "tests/consumer/project"
+                                    ],
+                                    "reason": "The consumer project is a fixture Infection runs on, not code to style."
+                                }
+                            ]
+                        },
+                        "phpstan": {
+                            "excludePaths": [
+                                {
+                                    "paths": [
+                                        "tests/consumer/project"
+                                    ],
+                                    "reason": "The consumer project is a fixture Infection runs on, not code to analyse."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            },
+                            "testsuites": {
+                                "plugin": {
+                                    "directories": [
+                                        "tests/Composer"
+                                    ],
+                                    "suffix": "Test.php"
+                                }
+                            }
+                        },
+                        "plugin": {
+                            "ci": [
+                                "infection"
+                            ]
+                        },
+                        "psalm": {
+                            "ignoreFiles": [
+                                {
+                                    "paths": [
+                                        "tests/consumer/project"
+                                    ],
+                                    "reason": "The consumer project is a fixture Infection runs on, not code to analyse."
+                                }
+                            ]
+                        },
+                        "rector": {
+                            "skip": [
+                                {
+                                    "paths": [
+                                        "tests/consumer/project/*"
+                                    ],
+                                    "reason": "The consumer project is a fixture Infection runs on, not code to rewrite."
+                                }
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Infection\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Infection\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Infection\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "consumer": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "tests/consumer/run"
+                    ],
+                    "infection": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer phpunit --write-configuration",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "mkdir -p vendor/bluenostrum/plugin-infection",
+                        "cp infection.json vendor/bluenostrum/plugin-infection/infection.json",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer phpunit --write-configuration",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "mkdir -p vendor/bluenostrum/plugin-infection",
+                        "cp infection.json vendor/bluenostrum/plugin-infection/infection.json",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with, and the composer infection command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/2.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-infection/issues"
+                }
+            }
+        ]
+    }
+}

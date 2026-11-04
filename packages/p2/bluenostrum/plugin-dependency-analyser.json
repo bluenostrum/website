@@ -1,0 +1,822 @@
+{
+    "packages": {
+        "bluenostrum/plugin-dependency-analyser": [
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "5daae73d81a5f0b70edad90c5b190566b6265b88"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/5daae73d81a5f0b70edad90c5b190566b6265b88",
+                    "reference": "5daae73d81a5f0b70edad90c5b190566b6265b88",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.3",
+                    "bluenostrum/plugin-infection": "^1.1",
+                    "bluenostrum/plugin-phpcs": "^1.14",
+                    "bluenostrum/plugin-phpstan": "^1.32",
+                    "bluenostrum/plugin-rector": "^1.3",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "vimeo/psalm": "^7.0.0"
+                },
+                "time": "2026-11-03T11:22:15+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "ci": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer deps",
+                            "composer phpcs",
+                            "composer rector",
+                            "composer phpstan",
+                            "composer psalm",
+                            "composer phpunit",
+                            "composer infection"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "infection": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src ./composer-dependency-analyser.php"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/1.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "a739e6d53e9599a4c9b0fc70566a079848002a6a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/a739e6d53e9599a4c9b0fc70566a079848002a6a",
+                    "reference": "a739e6d53e9599a4c9b0fc70566a079848002a6a",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.3",
+                    "bluenostrum/plugin-infection": "^1.1",
+                    "bluenostrum/plugin-phpcs": "^1.14",
+                    "bluenostrum/plugin-phpstan": "^1.32",
+                    "bluenostrum/plugin-rector": "^1.3",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "vimeo/psalm": "^7.0.0"
+                },
+                "time": "2026-11-03T12:54:06+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum-dev": {
+                        "ci": [
+                            "composer audit",
+                            "composer validate --strict",
+                            "composer normalize --dry-run",
+                            "composer lint",
+                            "composer deps",
+                            "composer phpcs",
+                            "composer rector",
+                            "composer phpstan",
+                            "composer psalm",
+                            "composer phpunit",
+                            "composer infection"
+                        ]
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "infection": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src ./composer-dependency-analyser.php"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/1.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "3061db1fab2fa7458a07d721c062f8c9bfe0df54"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/3061db1fab2fa7458a07d721c062f8c9bfe0df54",
+                    "reference": "3061db1fab2fa7458a07d721c062f8c9bfe0df54",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^1.4",
+                    "bluenostrum/plugin-infection": "^1.1",
+                    "bluenostrum/plugin-phpcs": "^1.14",
+                    "bluenostrum/plugin-phpstan": "^1.32",
+                    "bluenostrum/plugin-rector": "^1.3",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "vimeo/psalm": "^7.0.0"
+                },
+                "time": "2026-11-03T13:53:08+00:00",
+                "type": "library",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "ci": [
+                                "composer audit",
+                                "composer validate --strict",
+                                "composer normalize --dry-run",
+                                "composer lint",
+                                "composer deps",
+                                "composer phpcs",
+                                "composer rector",
+                                "composer phpstan",
+                                "composer psalm",
+                                "composer phpunit",
+                                "composer infection"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-html var/coverage"
+                    ],
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ],
+                    "fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process",
+                        "@phpcbf"
+                    ],
+                    "infection": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ],
+                    "lint": [
+                        "@putenv XDEBUG_MODE=off",
+                        "parallel-lint ./src ./composer-dependency-analyser.php"
+                    ],
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcbf"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "php -d memory_limit=2G vendor/bin/phpcs -s --colors --cache"
+                    ],
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpstan analyse --memory-limit 2G"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "phpunit --configuration phpunit.xml.dist --no-coverage"
+                    ],
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "psalm --config psalm.xml"
+                    ],
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/1.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "b6366b5ae2c63e678059af5d14164e855edf9bae"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/b6366b5ae2c63e678059af5d14164e855edf9bae",
+                    "reference": "b6366b5ae2c63e678059af5d14164e855edf9bae",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T09:14:53+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer deps"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "composer/composer"
+                                    ],
+                                    "paths": [
+                                        "src/Composer"
+                                    ],
+                                    "reason": "The plugin runs inside Composer, which provides those classes itself; composer-plugin-api is the requirement, and composer/composer serves the analysis and the tests."
+                                },
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "symfony/console"
+                                    ],
+                                    "paths": [
+                                        "src/Composer"
+                                    ],
+                                    "reason": "Composer provides symfony/console to a plugin at run time, as it provides its own classes; requiring it would install a copy beside the one Composer runs."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "dependency-analyser",
+                            "verify": [
+                                "deps"
+                            ]
+                        },
+                        "psalm": {
+                            "paths": [
+                                "composer-dependency-analyser.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\DependencyAnalyser\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.0.0",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "2.1.0",
+                "version_normalized": "2.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "25e5a0c11c41b0434a8049b87d980426cfec5f42"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/25e5a0c11c41b0434a8049b87d980426cfec5f42",
+                    "reference": "25e5a0c11c41b0434a8049b87d980426cfec5f42",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T11:25:09+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer deps"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "dependency-analyser",
+                            "verify": [
+                                "deps"
+                            ]
+                        },
+                        "psalm": {
+                            "paths": [
+                                "composer-dependency-analyser.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\DependencyAnalyser\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.1.0",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "2.1.1",
+                "version_normalized": "2.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "d9289d085a7516f3035cd5ed267b5444322faa09"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/d9289d085a7516f3035cd5ed267b5444322faa09",
+                    "reference": "d9289d085a7516f3035cd5ed267b5444322faa09",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T11:32:46+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer deps"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "dependency-analyser",
+                            "verify": [
+                                "deps"
+                            ]
+                        },
+                        "psalm": {
+                            "paths": [
+                                "composer-dependency-analyser.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\DependencyAnalyser\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.1.1",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "2.2.0",
+                "version_normalized": "2.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "774e6734645d6e24db0003b35eb79e29597fa558"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/774e6734645d6e24db0003b35eb79e29597fa558",
+                    "reference": "774e6734645d6e24db0003b35eb79e29597fa558",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-04T12:16:24+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer deps"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "dependency-analyser",
+                            "verify": [
+                                "deps"
+                            ]
+                        },
+                        "psalm": {
+                            "paths": [
+                                "composer-dependency-analyser.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\DependencyAnalyser\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            }
+        ]
+    }
+}

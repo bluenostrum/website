@@ -1,0 +1,85 @@
+name: composer registry
+
+# Rebuilds the Composer registry served at https://bluenostrum.com/packages.
+# Each package repository sends a `package-tagged` repository_dispatch when
+# a tag is pushed; workflow_dispatch allows a manual rebuild.
+on:
+  repository_dispatch:
+    types: [ package-tagged ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# Every build scans all packages, so a queued run covers any tags pushed
+# while the current one was running; never cancel one halfway.
+concurrency:
+  group: composer-registry
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Rebuild packages/
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # Satis has no maintained stable release; pin the commit.
+      - name: Checkout Satis
+        uses: actions/checkout@v6
+        with:
+          repository: composer/satis
+          ref: ca500eee609110c680ea5126ead2218dbc1ecb89
+          path: .satis
+          persist-credentials: false
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          coverage: none
+          tools: composer:v2
+
+      - name: Install Satis
+        working-directory: .satis
+        run: composer install --no-dev --no-interaction --prefer-dist --ansi
+
+      # Requires repo secret: CORE_REPO_TOKEN (a fine-grained, read-only PAT
+      # for the private bluenostrum/* packages satis.json names). It reaches
+      # this one step only, through COMPOSER_AUTH.
+      - name: Build registry
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.CORE_REPO_TOKEN }}"}}'
+        run: php .satis/bin/satis build satis.json packages --no-interaction --ansi
+
+      - name: Commit changes
+        id: commit
+        env:
+          PACKAGE: ${{ github.event.client_payload.package }}
+          TAG: ${{ github.event.client_payload.tag }}
+        run: |
+          git add packages
+          if git diff --cached --quiet; then
+            echo "Registry unchanged."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -n "$PACKAGE" ]; then
+            git commit -m "Rebuild Composer registry for ${PACKAGE#bluenostrum/}${TAG:+ $TAG}"
+          else
+            git commit -m "Rebuild Composer registry"
+          fi
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN may not start a Pages build; ask for one.
+      - name: Request Pages build
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

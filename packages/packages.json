@@ -1,0 +1,21 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$fa41a05a1892577e1530bf9d50ed44725f06a217.json": {
+            "sha1": "fa41a05a1892577e1530bf9d50ed44725f06a217"
+        }
+    },
+    "metadata-url": "/packages/p2/%package%.json",
+    "available-packages": [
+        "bluenostrum/framework",
+        "bluenostrum/plugin-captainhook",
+        "bluenostrum/plugin-composer",
+        "bluenostrum/plugin-dependency-analyser",
+        "bluenostrum/plugin-infection",
+        "bluenostrum/plugin-phpcs",
+        "bluenostrum/plugin-phpstan",
+        "bluenostrum/plugin-phpunit",
+        "bluenostrum/plugin-psalm",
+        "bluenostrum/plugin-rector"
+    ]
+}
