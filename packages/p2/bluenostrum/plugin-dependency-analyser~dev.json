@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
-                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7"
+                    "reference": "56acea1ce7ed70af56a36627d79f03d59dc93827"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/56166c0f825630cb8b78e4d0d4a1b950d14511e7",
-                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/56acea1ce7ed70af56a36627d79f03d59dc93827",
+                    "reference": "56acea1ce7ed70af56a36627d79f03d59dc93827",
                     "shasum": ""
                 },
                 "require": {
@@ -35,7 +35,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T13:56:34+00:00",
+                "time": "2026-11-05T14:04:04+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -95,7 +95,7 @@
                 ],
                 "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.2.1",
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
                 }
             }
