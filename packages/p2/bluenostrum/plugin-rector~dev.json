@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "442dde4c1d6dd5aa935411c0b38c93085b5d63f0"
+                    "reference": "36ba9e9a576a3e47c990972eca02e1f29f66f110"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/442dde4c1d6dd5aa935411c0b38c93085b5d63f0",
-                    "reference": "442dde4c1d6dd5aa935411c0b38c93085b5d63f0",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/36ba9e9a576a3e47c990972eca02e1f29f66f110",
+                    "reference": "36ba9e9a576a3e47c990972eca02e1f29f66f110",
                     "shasum": ""
                 },
                 "require": {
@@ -28,7 +28,7 @@
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
                     "bluenostrum/plugin-phpcs": "^2.1.1",
-                    "bluenostrum/plugin-phpstan": "^2.4.0",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
                     "bluenostrum/plugin-phpunit": "^1.1.1",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "composer/composer": "^2.10",
@@ -38,7 +38,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T14:31:42+00:00",
+                "time": "2026-11-05T14:47:23+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -133,7 +133,7 @@
                 ],
                 "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.2.1",
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             }

@@ -8,16 +8,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8"
+                    "reference": "80f85844a021375b976f591123c76858fe0c5dee"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/73928ca28485cf0e81ef76323476d7cb389452a8",
-                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/80f85844a021375b976f591123c76858fe0c5dee",
+                    "reference": "80f85844a021375b976f591123c76858fe0c5dee",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "captainhook/captainhook-phar": "^5.29",
                     "captainhook/plugin-composer": "^5.3",
                     "composer-plugin-api": "^2.6",
@@ -26,13 +26,13 @@
                     "ramsey/conventional-commits": "^1.7"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-dependency-analyser": "^2.1",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.0",
-                    "bluenostrum/plugin-phpunit": "^1.0",
-                    "bluenostrum/plugin-psalm": "^1.0",
-                    "bluenostrum/plugin-rector": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "composer/xdebug-handler": "^3.0.5",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
@@ -43,7 +43,7 @@
                 "suggest": {
                     "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
                 },
-                "time": "2026-11-05T13:56:51+00:00",
+                "time": "2026-11-05T14:47:24+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -111,7 +111,7 @@
                 ],
                 "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.3.0",
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             }

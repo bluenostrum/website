@@ -8,34 +8,34 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-infection.git",
-                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b"
+                    "reference": "dc9422c35c2f660f13ec0b7a7e18dce4cff72d93"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/790173c2a55652dc12741fbbe3666ba3cd2e128b",
-                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/dc9422c35c2f660f13ec0b7a7e18dce4cff72d93",
+                    "reference": "dc9422c35c2f660f13ec0b7a7e18dce4cff72d93",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "infection/infection": "^0.35",
                     "php": "^8.5.12"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.2",
-                    "bluenostrum/plugin-phpcs": "^2.1",
-                    "bluenostrum/plugin-phpstan": "^2.1",
-                    "bluenostrum/plugin-phpunit": "^1.1",
-                    "bluenostrum/plugin-psalm": "^1.1",
-                    "bluenostrum/plugin-rector": "^2.1",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T13:56:37+00:00",
+                "time": "2026-11-05T14:47:20+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -139,7 +139,7 @@
                 ],
                 "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with, and the composer infection command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-infection/tree/2.0.1",
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-infection/issues"
                 }
             }

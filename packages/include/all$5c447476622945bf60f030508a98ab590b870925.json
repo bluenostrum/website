@@ -21482,6 +21482,488 @@
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
+            "1.70.0": {
+                "name": "bluenostrum/framework",
+                "version": "1.70.0",
+                "version_normalized": "1.70.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/framework.git",
+                    "reference": "7a9c1edca5d1a6bcdb7f4c0818b3281673981e1e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/7a9c1edca5d1a6bcdb7f4c0818b3281673981e1e",
+                    "reference": "7a9c1edca5d1a6bcdb7f4c0818b3281673981e1e",
+                    "shasum": ""
+                },
+                "require": {
+                    "brick/math": "^1.0",
+                    "cuyz/valinor": "^2.6.1",
+                    "doctrine/dbal": "^4.5",
+                    "doctrine/event-manager": "^2.1.1",
+                    "doctrine/migrations": "^3.9",
+                    "doctrine/orm": "^3.7",
+                    "doctrine/persistence": "^4.2",
+                    "dragonmantank/cron-expression": "^3.6",
+                    "ext-filter": "*",
+                    "ext-mbstring": "*",
+                    "ext-sodium": "*",
+                    "ext-uri": "*",
+                    "giggsey/libphonenumber-for-php": "^9.0",
+                    "monolog/monolog": "^3.12",
+                    "nikic/php-parser": "^5.9",
+                    "php": "^8.5.12",
+                    "phpstan/phpdoc-parser": "^2.4",
+                    "psr/cache": "^3.0",
+                    "psr/clock": "^1.0",
+                    "psr/container": "^2.0",
+                    "psr/event-dispatcher": "^1.0",
+                    "psr/http-factory": "^1.1",
+                    "psr/http-message": "^2.0",
+                    "psr/http-server-handler": "^1.0",
+                    "psr/http-server-middleware": "^1.0",
+                    "psr/log": "^3.0",
+                    "ramsey/uuid": "^4.9",
+                    "ramsey/uuid-doctrine": "^2.1",
+                    "symfony/cache": "^8.1",
+                    "symfony/config": "^8.1",
+                    "symfony/console": "^8.1",
+                    "symfony/contracts": "^3.7",
+                    "symfony/dependency-injection": "^8.1",
+                    "symfony/dotenv": "^8.1",
+                    "symfony/event-dispatcher": "^8.1",
+                    "symfony/intl": "^8.1",
+                    "symfony/messenger": "^8.1",
+                    "symfony/rate-limiter": "^8.1",
+                    "symfony/routing": "^8.1",
+                    "symfony/validator": "^8.1",
+                    "symfony/yaml": "^8.1",
+                    "webmozart/assert": "^2.5"
+                },
+                "conflict": {
+                    "symfony/polyfill-php83": "<1.31"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "ext-intl": "*",
+                    "ext-pdo_pgsql": "*",
+                    "ext-sqlite3": "*",
+                    "opis/json-schema": "^2.6",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpstan/phpstan": "^2.3",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "suggest": {
+                    "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
+                    "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
+                },
+                "time": "2026-11-05T14:58:30+00:00",
+                "bin": [
+                    "bin/bluenostrum"
+                ],
+                "type": "library",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "ci": [
+                                "composer phpunit --fail-on-skipped"
+                            ],
+                            "pre-push": [
+                                "bin/check-against-postgres"
+                            ],
+                            "watch": [
+                                "compose.yaml"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "phpstan/phpstan"
+                                    ],
+                                    "paths": [
+                                        "src/PhpStan"
+                                    ],
+                                    "reason": "The PhpStan component ships rules consumers load through PHPStan itself, so it references PHPStan classes without requiring the package in production."
+                                }
+                            ]
+                        },
+                        "exclude": [
+                            {
+                                "paths": [
+                                    "tests/PhpStan/Fixture"
+                                ],
+                                "reason": "The PHPStan rule fixtures break the rules and miscase class names on purpose, to give the rules something to report."
+                            }
+                        ],
+                        "phpcs": {
+                            "exclude": [
+                                {
+                                    "paths": [
+                                        "src/Http/Routing/HttpMethod.php",
+                                        "src/Domain/ValueObject/NamingConvention.php",
+                                        "src/Cqrs/FilterOperator.php",
+                                        "src/Bridge/Doctrine/Cqrs/SqlOperator.php"
+                                    ],
+                                    "reason": "Their string values are externally defined and cannot be snake_case: HTTP method tokens (RFC 7231), the public names of the naming conventions themselves, and SQL and filter comparison operator symbols.",
+                                    "sniffs": [
+                                        "Bluenostrum.Enums.EnumValueSnakeCase"
+                                    ]
+                                }
+                            ]
+                        },
+                        "phpstan": {
+                            "ignoreErrors": [
+                                {
+                                    "identifier": "bluenostrum.attribute.target",
+                                    "paths": [
+                                        "tests/Mcp/Fixture/TaggedWrite.php",
+                                        "tests/Mcp/Fixture/TaggedBareRequest.php"
+                                    ],
+                                    "reason": "The tool catalog tests need #[McpTool] on messages it must leave out."
+                                }
+                            ],
+                            "includes": [
+                                "extension.neon"
+                            ],
+                            "rules": [
+                                "Bluenostrum\\PhpStan\\Rule\\AssertMessageEscapingRule",
+                                "Bluenostrum\\PhpStan\\Rule\\ExceptionMessageSanitizingRule"
+                            ],
+                            "services": [
+                                {
+                                    "arguments": {
+                                        "excludePatterns": [
+                                            "#\\\\Tests\\\\#"
+                                        ],
+                                        "patterns": [
+                                            "#^Bluenostrum\\\\#"
+                                        ]
+                                    },
+                                    "class": "Bluenostrum\\PhpStan\\Rule\\JsonEncoderUsageRule"
+                                },
+                                {
+                                    "arguments": {
+                                        "allowedDependencies": {
+                                            "Attribute": [],
+                                            "Auth": [
+                                                "Attribute",
+                                                "Context",
+                                                "Cqrs",
+                                                "Exception"
+                                            ],
+                                            "Bridge": [
+                                                "Attribute",
+                                                "Auth",
+                                                "Checkpoint",
+                                                "Clock",
+                                                "Context",
+                                                "Cqrs",
+                                                "Crypt",
+                                                "Domain",
+                                                "Exception",
+                                                "Http",
+                                                "Mcp",
+                                                "Metrics",
+                                                "Notification",
+                                                "OpenApi",
+                                                "Outbox",
+                                                "RateLimiter",
+                                                "Schedule",
+                                                "Tenancy",
+                                                "Uuid"
+                                            ],
+                                            "Checkpoint": [
+                                                "Auth",
+                                                "Clock",
+                                                "Context",
+                                                "Cqrs",
+                                                "Exception"
+                                            ],
+                                            "Clock": [],
+                                            "Context": [
+                                                "Exception"
+                                            ],
+                                            "Cqrs": [
+                                                "Clock",
+                                                "Context",
+                                                "Exception"
+                                            ],
+                                            "Crypt": [
+                                                "Exception"
+                                            ],
+                                            "Domain": [
+                                                "Context",
+                                                "Crypt",
+                                                "Exception"
+                                            ],
+                                            "Exception": [],
+                                            "Http": [
+                                                "Context",
+                                                "Cqrs",
+                                                "Exception"
+                                            ],
+                                            "Mcp": [
+                                                "Attribute",
+                                                "Context",
+                                                "Cqrs",
+                                                "Exception"
+                                            ],
+                                            "Metrics": [
+                                                "Outbox"
+                                            ],
+                                            "Notification": [
+                                                "Domain"
+                                            ],
+                                            "OpenApi": [
+                                                "Attribute",
+                                                "Auth",
+                                                "Context",
+                                                "Cqrs",
+                                                "Http",
+                                                "RateLimiter"
+                                            ],
+                                            "Outbox": [
+                                                "Clock",
+                                                "Context",
+                                                "Exception"
+                                            ],
+                                            "PhpStan": [
+                                                "Auth",
+                                                "Clock",
+                                                "Cqrs",
+                                                "Domain",
+                                                "Exception",
+                                                "Uuid"
+                                            ],
+                                            "RateLimiter": [
+                                                "Attribute",
+                                                "Context",
+                                                "Cqrs",
+                                                "Exception"
+                                            ],
+                                            "Schedule": [
+                                                "Attribute",
+                                                "Clock",
+                                                "Context",
+                                                "Cqrs",
+                                                "Domain",
+                                                "Outbox",
+                                                "Uuid"
+                                            ],
+                                            "Tenancy": [
+                                                "Context",
+                                                "Cqrs",
+                                                "Exception"
+                                            ],
+                                            "Uuid": []
+                                        },
+                                        "rootNamespace": "Bluenostrum"
+                                    },
+                                    "class": "Bluenostrum\\PhpStan\\Rule\\ModuleBoundaryRule"
+                                },
+                                {
+                                    "arguments": {
+                                        "allowedDependencies": {
+                                            "Doctrine": [],
+                                            "Monolog": [],
+                                            "Symfony": [
+                                                "Doctrine",
+                                                "Monolog",
+                                                "Valinor"
+                                            ],
+                                            "Valinor": []
+                                        },
+                                        "rootNamespace": "Bluenostrum\\Bridge"
+                                    },
+                                    "class": "Bluenostrum\\PhpStan\\Rule\\ModuleBoundaryRule"
+                                },
+                                {
+                                    "arguments": {
+                                        "excludePatterns": [
+                                            "#\\\\Tests\\\\#"
+                                        ],
+                                        "patterns": [
+                                            "#^Bluenostrum\\\\#"
+                                        ]
+                                    },
+                                    "class": "Bluenostrum\\PhpStan\\Rule\\NonThrowingUsageRule"
+                                },
+                                {
+                                    "arguments": {
+                                        "allowedVendors": {
+                                            "Attribute": [
+                                                "Psr\\Cache"
+                                            ],
+                                            "Auth": [
+                                                "Psr\\Container"
+                                            ],
+                                            "Bridge": [
+                                                "CuyZ\\Valinor",
+                                                "Doctrine",
+                                                "Monolog",
+                                                "Psr",
+                                                "Symfony"
+                                            ],
+                                            "Checkpoint": [
+                                                "Psr\\Clock"
+                                            ],
+                                            "Clock": [
+                                                "Psr\\Clock"
+                                            ],
+                                            "Context": [],
+                                            "Cqrs": [
+                                                "Psr\\Cache",
+                                                "Psr\\Container",
+                                                "Psr\\EventDispatcher",
+                                                "Psr\\Log"
+                                            ],
+                                            "Crypt": [],
+                                            "Domain": [
+                                                "Brick\\Math",
+                                                "Symfony\\Component\\Intl",
+                                                "Uri",
+                                                "libphonenumber"
+                                            ],
+                                            "Exception": [
+                                                "Psr\\EventDispatcher",
+                                                "Psr\\Log"
+                                            ],
+                                            "Http": [
+                                                "Psr\\Http",
+                                                "Psr\\Log"
+                                            ],
+                                            "Mcp": [
+                                                "Psr\\Log"
+                                            ],
+                                            "Metrics": [
+                                                "Psr\\Http"
+                                            ],
+                                            "Notification": [],
+                                            "OpenApi": [
+                                                "PHPStan\\PhpDocParser",
+                                                "PhpParser"
+                                            ],
+                                            "Outbox": [
+                                                "Psr\\Clock",
+                                                "Psr\\EventDispatcher",
+                                                "Psr\\Log"
+                                            ],
+                                            "PhpStan": [
+                                                "Doctrine\\DBAL",
+                                                "Doctrine\\ORM",
+                                                "PHPStan",
+                                                "PhpParser",
+                                                "Psr\\Clock"
+                                            ],
+                                            "RateLimiter": [
+                                                "Psr\\Log"
+                                            ],
+                                            "Schedule": [
+                                                "Cron",
+                                                "Psr\\Clock"
+                                            ],
+                                            "Tenancy": [],
+                                            "Uuid": []
+                                        },
+                                        "alwaysAllowed": [
+                                            "Ramsey\\Uuid",
+                                            "Webmozart\\Assert"
+                                        ],
+                                        "rootNamespace": "Bluenostrum"
+                                    },
+                                    "class": "Bluenostrum\\PhpStan\\Rule\\VendorBoundaryRule"
+                                }
+                            ],
+                            "stubFiles": [
+                                "resources/stubs/symfony.php"
+                            ]
+                        },
+                        "psalm": {
+                            "stubs": [
+                                "resources/stubs/symfony.php"
+                            ],
+                            "suppress": [
+                                {
+                                    "issue": "ImmutableDependency",
+                                    "paths": [
+                                        "src/Bridge/Valinor/Cqrs/HydrationFailed.php",
+                                        "src/Bridge/Valinor/Cqrs/RefusedArgument.php"
+                                    ],
+                                    "reason": "Valinor marks MappingError::messages/type/source, Message::body and HasParameters::parameters @pure, which under Psalm 7 no implementation returning stored state can satisfy; CuyZ/Valinor#854 fixes it, and #472 tracks removing this."
+                                }
+                            ]
+                        },
+                        "rector": {
+                            "skip": [
+                                {
+                                    "paths": [
+                                        "tests/Bridge/Symfony/Outbox/Console/Mock/StopOnIdleWorkerListener.php"
+                                    ],
+                                    "reason": "The listener is registered by subscription on purpose, to test that path.",
+                                    "rules": [
+                                        "Rector\\Symfony\\CodeQuality\\Rector\\Class_\\EventSubscriberToAttributeRector"
+                                    ]
+                                },
+                                {
+                                    "paths": [
+                                        "src/Domain/EventRecordingAggregateRoot.php"
+                                    ],
+                                    "reason": "The promoted id must stay writable for Doctrine hydration.",
+                                    "rules": [
+                                        "Rector\\Php81\\Rector\\Property\\ReadOnlyPropertyRector"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "phpstan": {
+                        "includes": [
+                            "extension.neon"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
+                "support": {
+                    "source": "https://github.com/bluenostrum/framework/tree/1.70.0",
+                    "issues": "https://github.com/bluenostrum/framework/issues"
+                }
+            },
             "1.8.0": {
                 "name": "bluenostrum/framework",
                 "version": "1.8.0",
@@ -22421,12 +22903,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
-                    "reference": "b558a8562bd2ddc182d6064f211561d1b2d41c2e"
+                    "reference": "7a9c1edca5d1a6bcdb7f4c0818b3281673981e1e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/b558a8562bd2ddc182d6064f211561d1b2d41c2e",
-                    "reference": "b558a8562bd2ddc182d6064f211561d1b2d41c2e",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/7a9c1edca5d1a6bcdb7f4c0818b3281673981e1e",
+                    "reference": "7a9c1edca5d1a6bcdb7f4c0818b3281673981e1e",
                     "shasum": ""
                 },
                 "require": {
@@ -22477,14 +22959,14 @@
                     "symfony/polyfill-php83": "<1.31"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.2",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.1",
-                    "bluenostrum/plugin-phpstan": "^2.2",
-                    "bluenostrum/plugin-phpunit": "^1.1",
-                    "bluenostrum/plugin-psalm": "^1.1.1",
-                    "bluenostrum/plugin-rector": "^2.1",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "ext-intl": "*",
                     "ext-pdo_pgsql": "*",
                     "ext-sqlite3": "*",
@@ -22498,7 +22980,7 @@
                     "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
                     "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
                 },
-                "time": "2026-11-05T13:29:44+00:00",
+                "time": "2026-11-05T14:58:30+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/bluenostrum"
@@ -22893,7 +23375,7 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/main",
+                    "source": "https://github.com/bluenostrum/framework/tree/1.70.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             }
@@ -24388,16 +24870,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8"
+                    "reference": "80f85844a021375b976f591123c76858fe0c5dee"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/73928ca28485cf0e81ef76323476d7cb389452a8",
-                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/80f85844a021375b976f591123c76858fe0c5dee",
+                    "reference": "80f85844a021375b976f591123c76858fe0c5dee",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "captainhook/captainhook-phar": "^5.29",
                     "captainhook/plugin-composer": "^5.3",
                     "composer-plugin-api": "^2.6",
@@ -24406,13 +24888,13 @@
                     "ramsey/conventional-commits": "^1.7"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-dependency-analyser": "^2.1",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.0",
-                    "bluenostrum/plugin-phpunit": "^1.0",
-                    "bluenostrum/plugin-psalm": "^1.0",
-                    "bluenostrum/plugin-rector": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "composer/xdebug-handler": "^3.0.5",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
@@ -24423,7 +24905,7 @@
                 "suggest": {
                     "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
                 },
-                "time": "2026-11-05T13:56:51+00:00",
+                "time": "2026-11-05T14:47:24+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -24491,7 +24973,7 @@
                 ],
                 "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.3.0",
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             }
@@ -24636,30 +25118,30 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-composer.git",
-                    "reference": "3d376b74236afcd38b3fa9c3752b9cf826631c3e"
+                    "reference": "ca1324e49ba2185c32d8c04712e5b0ae52821f79"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-composer/zipball/3d376b74236afcd38b3fa9c3752b9cf826631c3e",
-                    "reference": "3d376b74236afcd38b3fa9c3752b9cf826631c3e",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-composer/zipball/ca1324e49ba2185c32d8c04712e5b0ae52821f79",
+                    "reference": "ca1324e49ba2185c32d8c04712e5b0ae52821f79",
                     "shasum": ""
                 },
                 "require": {
                     "php": "^8.5.12"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.2.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.1",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.3",
-                    "bluenostrum/plugin-phpunit": "^1.0",
-                    "bluenostrum/plugin-psalm": "^1.1",
-                    "bluenostrum/plugin-rector": "^2.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest"
                 },
-                "time": "2026-11-05T14:03:52+00:00",
+                "time": "2026-11-05T14:47:18+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -25618,34 +26100,34 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
-                    "reference": "56acea1ce7ed70af56a36627d79f03d59dc93827"
+                    "reference": "8b8f9bdd2df7c93fb1ff7e4bc3d952d3c85d551e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/56acea1ce7ed70af56a36627d79f03d59dc93827",
-                    "reference": "56acea1ce7ed70af56a36627d79f03d59dc93827",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/8b8f9bdd2df7c93fb1ff7e4bc3d952d3c85d551e",
+                    "reference": "8b8f9bdd2df7c93fb1ff7e4bc3d952d3c85d551e",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "php": "^8.5.12",
                     "shipmonk/composer-dependency-analyser": "^1.8.4"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.0",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.0",
-                    "bluenostrum/plugin-phpunit": "^1.0",
-                    "bluenostrum/plugin-psalm": "^1.0",
-                    "bluenostrum/plugin-rector": "^2.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T14:04:04+00:00",
+                "time": "2026-11-05T14:47:19+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -26193,34 +26675,34 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-infection.git",
-                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b"
+                    "reference": "dc9422c35c2f660f13ec0b7a7e18dce4cff72d93"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/790173c2a55652dc12741fbbe3666ba3cd2e128b",
-                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/dc9422c35c2f660f13ec0b7a7e18dce4cff72d93",
+                    "reference": "dc9422c35c2f660f13ec0b7a7e18dce4cff72d93",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "infection/infection": "^0.35",
                     "php": "^8.5.12"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.2",
-                    "bluenostrum/plugin-phpcs": "^2.1",
-                    "bluenostrum/plugin-phpstan": "^2.1",
-                    "bluenostrum/plugin-phpunit": "^1.1",
-                    "bluenostrum/plugin-psalm": "^1.1",
-                    "bluenostrum/plugin-rector": "^2.1",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T13:56:37+00:00",
+                "time": "2026-11-05T14:47:20+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -26324,7 +26806,7 @@
                 ],
                 "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with, and the composer infection command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-infection/tree/2.0.1",
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-infection/issues"
                 }
             }
@@ -28979,16 +29461,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpcs.git",
-                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7"
+                    "reference": "0c2df39cab59285ae9040661a68f3a5ba9566ddd"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/e4ca6acbc0619973ec3ca076f68bfe71802daad7",
-                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/0c2df39cab59285ae9040661a68f3a5ba9566ddd",
+                    "reference": "0c2df39cab59285ae9040661a68f3a5ba9566ddd",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "doctrine/coding-standard": "^14.0",
                     "ext-dom": "*",
@@ -28997,20 +29479,20 @@
                     "squizlabs/php_codesniffer": "^4.0.4"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.2",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.1",
-                    "bluenostrum/plugin-phpunit": "^1.1",
-                    "bluenostrum/plugin-psalm": "^1.1",
-                    "bluenostrum/plugin-rector": "^2.1",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T13:56:40+00:00",
+                "time": "2026-11-05T14:47:20+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -29111,7 +29593,7 @@
                 ],
                 "description": "Custom PHP_CodeSniffer rules for bluenostrum architecture enforcement, with the composer phpcs command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.1",
+                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
                 }
             }
@@ -35755,35 +36237,35 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af"
+                    "reference": "24e055da32cf6ed0c9d472a6450e2345c981eef7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/896dcc9211ce275549f7de36c39e3d099372e9af",
-                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/24e055da32cf6ed0c9d472a6450e2345c981eef7",
+                    "reference": "24e055da32cf6ed0c9d472a6450e2345c981eef7",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
                     "php": "^8.5.12",
                     "phpunit/phpunit": "^13.4.6"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.0",
-                    "bluenostrum/plugin-dependency-analyser": "^2.1",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.0",
-                    "bluenostrum/plugin-psalm": "^1.0",
-                    "bluenostrum/plugin-rector": "^2.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T13:56:43+00:00",
+                "time": "2026-11-05T14:47:21+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -35850,7 +36332,7 @@
                 ],
                 "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.1.1",
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             }
@@ -36265,16 +36747,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "0744285c4660939dcdf1f4920ec89fa28a49451a"
+                    "reference": "834e81d7616466c7e03b388932a324e976526bfa"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/0744285c4660939dcdf1f4920ec89fa28a49451a",
-                    "reference": "0744285c4660939dcdf1f4920ec89fa28a49451a",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/834e81d7616466c7e03b388932a324e976526bfa",
+                    "reference": "834e81d7616466c7e03b388932a324e976526bfa",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
                     "php": "^8.5.12",
@@ -36282,19 +36764,19 @@
                     "vimeo/psalm": "^7.0.3"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.0",
-                    "bluenostrum/plugin-dependency-analyser": "^2.1",
-                    "bluenostrum/plugin-infection": "^2.0",
-                    "bluenostrum/plugin-phpcs": "^2.0",
-                    "bluenostrum/plugin-phpstan": "^2.0",
-                    "bluenostrum/plugin-phpunit": "^1.0",
-                    "bluenostrum/plugin-rector": "^2.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T13:56:46+00:00",
+                "time": "2026-11-05T14:47:22+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -36349,7 +36831,7 @@
                 ],
                 "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.1.2",
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             }
@@ -37723,12 +38205,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "442dde4c1d6dd5aa935411c0b38c93085b5d63f0"
+                    "reference": "36ba9e9a576a3e47c990972eca02e1f29f66f110"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/442dde4c1d6dd5aa935411c0b38c93085b5d63f0",
-                    "reference": "442dde4c1d6dd5aa935411c0b38c93085b5d63f0",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/36ba9e9a576a3e47c990972eca02e1f29f66f110",
+                    "reference": "36ba9e9a576a3e47c990972eca02e1f29f66f110",
                     "shasum": ""
                 },
                 "require": {
@@ -37743,7 +38225,7 @@
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
                     "bluenostrum/plugin-phpcs": "^2.1.1",
-                    "bluenostrum/plugin-phpstan": "^2.4.0",
+                    "bluenostrum/plugin-phpstan": "^2.4.1",
                     "bluenostrum/plugin-phpunit": "^1.1.1",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "composer/composer": "^2.10",
@@ -37753,7 +38235,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T14:31:42+00:00",
+                "time": "2026-11-05T14:47:23+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -37848,7 +38330,7 @@
                 ],
                 "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.2.1",
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             }
