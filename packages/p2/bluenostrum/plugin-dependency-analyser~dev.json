@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
-                    "reference": "196100b0259da8beae87ae9b3a704422528ca223"
+                    "reference": "bbb2e033b06ce0f1302985b1b82e31e82cfda7b2"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/196100b0259da8beae87ae9b3a704422528ca223",
-                    "reference": "196100b0259da8beae87ae9b3a704422528ca223",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/bbb2e033b06ce0f1302985b1b82e31e82cfda7b2",
+                    "reference": "bbb2e033b06ce0f1302985b1b82e31e82cfda7b2",
                     "shasum": ""
                 },
                 "require": {
@@ -35,7 +35,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-04T18:05:17+00:00",
+                "time": "2026-11-04T18:15:30+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

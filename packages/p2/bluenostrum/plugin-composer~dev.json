@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-composer.git",
-                    "reference": "ef941f1326d8aeba9ccf3d88dd1c72b876fe2d48"
+                    "reference": "d930e5de1048eb2bfae5f357eb72eb59e11e29b8"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-composer/zipball/ef941f1326d8aeba9ccf3d88dd1c72b876fe2d48",
-                    "reference": "ef941f1326d8aeba9ccf3d88dd1c72b876fe2d48",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-composer/zipball/d930e5de1048eb2bfae5f357eb72eb59e11e29b8",
+                    "reference": "d930e5de1048eb2bfae5f357eb72eb59e11e29b8",
                     "shasum": ""
                 },
                 "require": {
@@ -31,7 +31,7 @@
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest"
                 },
-                "time": "2026-11-04T18:05:16+00:00",
+                "time": "2026-11-04T18:15:25+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {

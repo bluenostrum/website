@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "b72855df4883cdd51dfe8f53b12ae05f42241a21"
+                    "reference": "16b5927d2c4ffb0fdfcc3f9eab3051cbffce6186"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/b72855df4883cdd51dfe8f53b12ae05f42241a21",
-                    "reference": "b72855df4883cdd51dfe8f53b12ae05f42241a21",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/16b5927d2c4ffb0fdfcc3f9eab3051cbffce6186",
+                    "reference": "16b5927d2c4ffb0fdfcc3f9eab3051cbffce6186",
                     "shasum": ""
                 },
                 "require": {
@@ -39,7 +39,7 @@
                     "symfony/console": "^8.1",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-04T18:05:15+00:00",
+                "time": "2026-11-04T18:15:09+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

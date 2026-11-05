@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
-                    "reference": "41626891a9775a43d627e28b8199cc258cc24a9a"
+                    "reference": "a078574578da947c130d4be941ea246ce3beed7a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/41626891a9775a43d627e28b8199cc258cc24a9a",
-                    "reference": "41626891a9775a43d627e28b8199cc258cc24a9a",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/a078574578da947c130d4be941ea246ce3beed7a",
+                    "reference": "a078574578da947c130d4be941ea246ce3beed7a",
                     "shasum": ""
                 },
                 "require": {
@@ -82,10 +82,10 @@
                     "symfony/process": "^8.1"
                 },
                 "suggest": {
-                    "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, add it as a VCS repository",
+                    "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
                     "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
                 },
-                "time": "2026-11-04T17:27:06+00:00",
+                "time": "2026-11-04T19:06:56+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/bluenostrum"
@@ -484,7 +484,7 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.68.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/main",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             }
