@@ -22421,12 +22421,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
-                    "reference": "aa22c23c6a7f8c721642593cd343f6b26a103858"
+                    "reference": "b558a8562bd2ddc182d6064f211561d1b2d41c2e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/aa22c23c6a7f8c721642593cd343f6b26a103858",
-                    "reference": "aa22c23c6a7f8c721642593cd343f6b26a103858",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/b558a8562bd2ddc182d6064f211561d1b2d41c2e",
+                    "reference": "b558a8562bd2ddc182d6064f211561d1b2d41c2e",
                     "shasum": ""
                 },
                 "require": {
@@ -22498,7 +22498,7 @@
                     "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
                     "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
                 },
-                "time": "2026-11-05T11:59:43+00:00",
+                "time": "2026-11-05T13:29:44+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/bluenostrum"
@@ -22893,7 +22893,7 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.69.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/main",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             }
@@ -24268,23 +24268,23 @@
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             },
-            "dev-main": {
+            "2.3.0": {
                 "name": "bluenostrum/plugin-captainhook",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "2.3.0",
+                "version_normalized": "2.3.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "69004a67b8fa29f2b21b02dd563b4bb84fe9df98"
+                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/69004a67b8fa29f2b21b02dd563b4bb84fe9df98",
-                    "reference": "69004a67b8fa29f2b21b02dd563b4bb84fe9df98",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/73928ca28485cf0e81ef76323476d7cb389452a8",
+                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "captainhook/captainhook-phar": "^5.29",
                     "captainhook/plugin-composer": "^5.3",
                     "composer-plugin-api": "^2.6",
@@ -24307,8 +24307,10 @@
                     "symfony/console": "^8.1",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T07:54:49+00:00",
-                "default-branch": true,
+                "suggest": {
+                    "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
+                },
+                "time": "2026-11-05T13:56:51+00:00",
                 "type": "composer-plugin",
                 "extra": {
                     "bluenostrum": {
@@ -24328,6 +24330,15 @@
                                         "ramsey/conventional-commits"
                                     ],
                                     "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                },
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "extensions": [
+                                        "ext-pcntl"
+                                    ],
+                                    "reason": "Optional: verify traps signals only where function_exists('pcntl_signal'), and the tests that need it require it."
                                 }
                             ]
                         },
@@ -24366,7 +24377,121 @@
                 ],
                 "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.3.0",
+                    "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-captainhook",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-captainhook.git",
+                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/73928ca28485cf0e81ef76323476d7cb389452a8",
+                    "reference": "73928ca28485cf0e81ef76323476d7cb389452a8",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "captainhook/captainhook-phar": "^5.29",
+                    "captainhook/plugin-composer": "^5.3",
+                    "composer-plugin-api": "^2.6",
+                    "ergebnis/composer-normalize": "^2.56",
+                    "php": "^8.5.12",
+                    "ramsey/conventional-commits": "^1.7"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "composer/xdebug-handler": "^3.0.5",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1",
+                    "symfony/process": "^8.1"
+                },
+                "suggest": {
+                    "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
+                },
+                "time": "2026-11-05T13:56:51+00:00",
+                "default-branch": true,
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "watch": [
+                                "captainhook.json",
+                                "captainhook.dev.json"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "ramsey/conventional-commits"
+                                    ],
+                                    "reason": "captainhook.json names its commit-msg validator; no PHP code does."
+                                },
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "extensions": [
+                                        "ext-pcntl"
+                                    ],
+                                    "reason": "Optional: verify traps signals only where function_exists('pcntl_signal'), and the tests that need it require it."
+                                }
+                            ]
+                        },
+                        "phpunit": {
+                            "source": [
+                                "bin/hook-block-self-credit"
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "captainhook"
+                        }
+                    },
+                    "captainhook": {
+                        "config": "captainhook.dev.json"
+                    },
+                    "class": "Bluenostrum\\CaptainHook\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\CaptainHook\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.3.0",
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             }
@@ -25389,23 +25514,23 @@
                     "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
                 }
             },
-            "dev-main": {
+            "2.2.1": {
                 "name": "bluenostrum/plugin-dependency-analyser",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "2.2.1",
+                "version_normalized": "2.2.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
-                    "reference": "bb2be7ed33d30665b2b88fc4df86e01e4f6ef0b6"
+                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/bb2be7ed33d30665b2b88fc4df86e01e4f6ef0b6",
-                    "reference": "bb2be7ed33d30665b2b88fc4df86e01e4f6ef0b6",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/56166c0f825630cb8b78e4d0d4a1b950d14511e7",
+                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "php": "^8.5.12",
                     "shipmonk/composer-dependency-analyser": "^1.8.4"
@@ -25423,7 +25548,104 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:43:27+00:00",
+                "time": "2026-11-05T13:56:34+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer deps"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "dependency-analyser",
+                            "verify": [
+                                "deps"
+                            ]
+                        },
+                        "psalm": {
+                            "paths": [
+                                "composer-dependency-analyser.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\DependencyAnalyser\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.2.1",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/56166c0f825630cb8b78e4d0d4a1b950d14511e7",
+                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-05T13:56:34+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -25483,7 +25705,7 @@
                 ],
                 "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.2.1",
                     "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
                 }
             }
@@ -25823,22 +26045,23 @@
                     "issues": "https://github.com/bluenostrum/plugin-infection/issues"
                 }
             },
-            "dev-main": {
+            "2.0.1": {
                 "name": "bluenostrum/plugin-infection",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "2.0.1",
+                "version_normalized": "2.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-infection.git",
-                    "reference": "66e677b76df60ace1774538b7ac75fc87bb8fe34"
+                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/66e677b76df60ace1774538b7ac75fc87bb8fe34",
-                    "reference": "66e677b76df60ace1774538b7ac75fc87bb8fe34",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/790173c2a55652dc12741fbbe3666ba3cd2e128b",
+                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b",
                     "shasum": ""
                 },
                 "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "infection/infection": "^0.35",
                     "php": "^8.5.12"
@@ -25856,7 +26079,148 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:43:28+00:00",
+                "time": "2026-11-05T13:56:37+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "ci": [
+                                "composer infection"
+                            ],
+                            "watch": [
+                                "infection.json",
+                                "tests/"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "unused-dependency"
+                                    ],
+                                    "packages": [
+                                        "infection/infection"
+                                    ],
+                                    "reason": "The package ships infection.json and the command that runs the executable; no PHP code here references the package's classes."
+                                }
+                            ]
+                        },
+                        "exclude": [
+                            {
+                                "paths": [
+                                    "tests/consumer/project"
+                                ],
+                                "reason": "The project Infection runs on in the tests: it loads its class from the copy Infection mutates, not through this repository's autoloader."
+                            }
+                        ],
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            },
+                            "testsuites": {
+                                "plugin": {
+                                    "directories": [
+                                        "tests/Composer"
+                                    ]
+                                }
+                            }
+                        },
+                        "plugin": {
+                            "ci": [
+                                "infection"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Infection\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Infection\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Infection\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "consumer": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "tests/consumer/run"
+                    ],
+                    "infection": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer phpunit --write-configuration",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "mkdir -p vendor/bluenostrum/plugin-infection",
+                        "cp infection.json vendor/bluenostrum/plugin-infection/infection.json",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress"
+                    ],
+                    "infection-diff": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer phpunit --write-configuration",
+                        "@putenv XDEBUG_MODE=coverage",
+                        "mkdir -p vendor/bluenostrum/plugin-infection",
+                        "cp infection.json vendor/bluenostrum/plugin-infection/infection.json",
+                        "git add --intent-to-add --all -- src",
+                        "php -d memory_limit=2G -d opcache.enable_cli=1 vendor/bin/infection --configuration=vendor/bluenostrum/plugin-infection/infection.json --threads=max --show-mutations=0 --no-progress --git-diff-filter=AM --git-diff-base=origin/main --ignore-msi-with-no-mutations"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with, and the composer infection command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/2.0.1",
+                    "issues": "https://github.com/bluenostrum/plugin-infection/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-infection",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-infection.git",
+                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/790173c2a55652dc12741fbbe3666ba3cd2e128b",
+                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "composer-plugin-api": "^2.6",
+                    "infection/infection": "^0.35",
+                    "php": "^8.5.12"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.1",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2",
+                    "bluenostrum/plugin-phpcs": "^2.1",
+                    "bluenostrum/plugin-phpstan": "^2.1",
+                    "bluenostrum/plugin-phpunit": "^1.1",
+                    "bluenostrum/plugin-psalm": "^1.1",
+                    "bluenostrum/plugin-rector": "^2.1",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-05T13:56:37+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -25960,7 +26324,7 @@
                 ],
                 "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with, and the composer infection command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-infection/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/2.0.1",
                     "issues": "https://github.com/bluenostrum/plugin-infection/issues"
                 }
             }
@@ -28466,23 +28830,23 @@
                     "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
                 }
             },
-            "dev-main": {
+            "2.1.1": {
                 "name": "bluenostrum/plugin-phpcs",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "2.1.1",
+                "version_normalized": "2.1.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpcs.git",
-                    "reference": "79b80fef50f04c095ee4121729d9a5f92c5116c1"
+                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/79b80fef50f04c095ee4121729d9a5f92c5116c1",
-                    "reference": "79b80fef50f04c095ee4121729d9a5f92c5116c1",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/e4ca6acbc0619973ec3ca076f68bfe71802daad7",
+                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "doctrine/coding-standard": "^14.0",
                     "ext-dom": "*",
@@ -28504,7 +28868,149 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T06:43:29+00:00",
+                "time": "2026-11-05T13:56:40+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer phpcs"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "webmozart/assert"
+                                    ],
+                                    "paths": [
+                                        "src/Bluenostrum/Sniffs/Webmozart/AssertSniff.php"
+                                    ],
+                                    "reason": "AssertSniff matches calls to Webmozart\\Assert\\Assert in the code it sniffs and names the class only through ::class, which never autoloads it."
+                                }
+                            ]
+                        },
+                        "exclude": [
+                            {
+                                "paths": [
+                                    "tests/Fixture"
+                                ],
+                                "reason": "The sniff fixtures hold the code the sniffs report."
+                            }
+                        ],
+                        "phpunit": {
+                            "const": {
+                                "PHP_CODESNIFFER_CBF": false,
+                                "PHP_CODESNIFFER_VERBOSITY": 0
+                            },
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "phpcs",
+                            "verify": [
+                                "phpcs"
+                            ]
+                        },
+                        "psalm": {
+                            "stubs": [
+                                "vendor/squizlabs/php_codesniffer/src/Sniffs/Sniff.php",
+                                "vendor/squizlabs/php_codesniffer/src/Files/File.php",
+                                "vendor/squizlabs/php_codesniffer/src/Files/LocalFile.php",
+                                "vendor/squizlabs/php_codesniffer/src/Config.php",
+                                "vendor/squizlabs/php_codesniffer/src/Ruleset.php",
+                                "vendor/squizlabs/php_codesniffer/src/Fixer.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\": "src/Bluenostrum/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Tests\\": "tests/"
+                    },
+                    "files": [
+                        "vendor/squizlabs/php_codesniffer/autoload.php",
+                        "vendor/squizlabs/php_codesniffer/src/Util/Tokens.php"
+                    ]
+                },
+                "scripts": {
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpcs --fix"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpcs"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Custom PHP_CodeSniffer rules for bluenostrum architecture enforcement, with the composer phpcs command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.1",
+                    "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-phpcs",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-phpcs.git",
+                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/e4ca6acbc0619973ec3ca076f68bfe71802daad7",
+                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "composer-plugin-api": "^2.6",
+                    "doctrine/coding-standard": "^14.0",
+                    "ext-dom": "*",
+                    "ext-tokenizer": "*",
+                    "php": "^8.5.12",
+                    "squizlabs/php_codesniffer": "^4.0.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.1",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.1",
+                    "bluenostrum/plugin-phpunit": "^1.1",
+                    "bluenostrum/plugin-psalm": "^1.1",
+                    "bluenostrum/plugin-rector": "^2.1",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-05T13:56:40+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -28605,7 +29111,7 @@
                 ],
                 "description": "Custom PHP_CodeSniffer rules for bluenostrum architecture enforcement, with the composer phpcs command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.1",
                     "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
                 }
             }
@@ -34982,23 +35488,23 @@
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             },
-            "dev-main": {
+            "1.1.1": {
                 "name": "bluenostrum/plugin-phpunit",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "1.1.1",
+                "version_normalized": "1.1.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "372c62a81b4ba95bbb3d85de682aecdff103f5d3"
+                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/372c62a81b4ba95bbb3d85de682aecdff103f5d3",
-                    "reference": "372c62a81b4ba95bbb3d85de682aecdff103f5d3",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/896dcc9211ce275549f7de36c39e3d099372e9af",
+                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
                     "php": "^8.5.12",
@@ -35017,7 +35523,112 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:43:31+00:00",
+                "time": "2026-11-05T13:56:43+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer phpunit"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "prod-dependency-only-in-dev"
+                                    ],
+                                    "packages": [
+                                        "phpunit/phpunit"
+                                    ],
+                                    "reason": "The commands run PHPUnit as an executable, so no production code names its classes; the package requires it so a project gets PHPUnit from the package alone."
+                                }
+                            ]
+                        },
+                        "plugin": {
+                            "settings": "phpunit",
+                            "verify": [
+                                "phpunit"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\PhpUnit\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\PhpUnit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\PhpUnit\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php coverage"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpunit"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.1.1",
+                    "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-phpunit",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-phpunit.git",
+                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/896dcc9211ce275549f7de36c39e3d099372e9af",
+                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "composer-plugin-api": "^2.6",
+                    "ext-dom": "*",
+                    "php": "^8.5.12",
+                    "phpunit/phpunit": "^13.4.6"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-05T13:56:43+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -35084,7 +35695,7 @@
                 ],
                 "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.1.1",
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             }
@@ -35398,19 +36009,19 @@
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             },
-            "dev-main": {
+            "1.1.2": {
                 "name": "bluenostrum/plugin-psalm",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "1.1.2",
+                "version_normalized": "1.1.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "1cb3b7f49f1dbb4709fb627b3635bb1c4592e41d"
+                    "reference": "0744285c4660939dcdf1f4920ec89fa28a49451a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/1cb3b7f49f1dbb4709fb627b3635bb1c4592e41d",
-                    "reference": "1cb3b7f49f1dbb4709fb627b3635bb1c4592e41d",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/0744285c4660939dcdf1f4920ec89fa28a49451a",
+                    "reference": "0744285c4660939dcdf1f4920ec89fa28a49451a",
                     "shasum": ""
                 },
                 "require": {
@@ -35434,7 +36045,101 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:43:32+00:00",
+                "time": "2026-11-05T13:56:46+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer psalm"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "psalm",
+                            "verify": [
+                                "psalm"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Psalm\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Psalm\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Psalm\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php psalm"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.1.2",
+                    "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-psalm",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-psalm.git",
+                    "reference": "0744285c4660939dcdf1f4920ec89fa28a49451a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/0744285c4660939dcdf1f4920ec89fa28a49451a",
+                    "reference": "0744285c4660939dcdf1f4920ec89fa28a49451a",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.0",
+                    "composer-plugin-api": "^2.6",
+                    "ext-dom": "*",
+                    "php": "^8.5.12",
+                    "psalm/plugin-phpunit": "^0.21",
+                    "vimeo/psalm": "^7.0.3"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.1",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-05T13:56:46+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -35489,7 +36194,7 @@
                 ],
                 "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.1.2",
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             }
@@ -36586,23 +37291,23 @@
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             },
-            "dev-main": {
+            "2.2.0": {
                 "name": "bluenostrum/plugin-rector",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "2.2.0",
+                "version_normalized": "2.2.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "988bad45afe92246880195c8f79db1109f8d6bd9"
+                    "reference": "9491acdf850e87382be7bceb0c2bc840be0bea74"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/988bad45afe92246880195c8f79db1109f8d6bd9",
-                    "reference": "988bad45afe92246880195c8f79db1109f8d6bd9",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9491acdf850e87382be7bceb0c2bc840be0bea74",
+                    "reference": "9491acdf850e87382be7bceb0c2bc840be0bea74",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "php": "^8.5.12",
                     "phpstan/phpstan": "^2.3",
@@ -36623,7 +37328,142 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T06:43:33+00:00",
+                "time": "2026-11-05T13:56:49+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer rector"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "shadow-dependency"
+                                    ],
+                                    "packages": [
+                                        "nikic/php-parser"
+                                    ],
+                                    "reason": "The rules run inside Rector, whose package bundles the parser in its own vendor/; requiring it would install a second copy."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "phpunit/phpunit",
+                                        "webmozart/assert"
+                                    ],
+                                    "reason": "The PHPUnit and Webmozart rules match those classes in the refactored code and name them only through ::class, which never autoloads them."
+                                }
+                            ]
+                        },
+                        "exclude": [
+                            {
+                                "paths": [
+                                    "tests/Rule/*/Fixture"
+                                ],
+                                "reason": "Rector rule fixtures hold input and expected output; AbstractRectorTestCase writes each input as a .php file beside it while a test runs, and timed-out Infection mutants can leave one behind."
+                            }
+                        ],
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "rector",
+                            "verify": [
+                                "rector"
+                            ]
+                        },
+                        "psalm": {
+                            "stubs": [
+                                "resources/stubs/rector.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Rector\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Rector\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "rector": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --dry-run --config config/rector.php"
+                    ],
+                    "rector-fix": [
+                        "@putenv XDEBUG_MODE=off",
+                        "rector process --config config/rector.php"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-rector/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-rector",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-rector.git",
+                    "reference": "9491acdf850e87382be7bceb0c2bc840be0bea74"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9491acdf850e87382be7bceb0c2bc840be0bea74",
+                    "reference": "9491acdf850e87382be7bceb0c2bc840be0bea74",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "rector/rector": "^2.8"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.1",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.1",
+                    "bluenostrum/plugin-phpstan": "^2.1",
+                    "bluenostrum/plugin-phpunit": "^1.1",
+                    "bluenostrum/plugin-psalm": "^1.1",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-05T13:56:49+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -36676,14 +37516,8 @@
                             ]
                         },
                         "psalm": {
-                            "suppress": [
-                                {
-                                    "issue": "PropertyNotSetInConstructor",
-                                    "paths": [
-                                        "src/Rule"
-                                    ],
-                                    "reason": "Rector sets AbstractRector's services through autowire() after construction."
-                                }
+                            "stubs": [
+                                "resources/stubs/rector.php"
                             ]
                         }
                     },
@@ -36724,7 +37558,7 @@
                 ],
                 "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-rector/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.2.0",
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             }

@@ -8,16 +8,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "372c62a81b4ba95bbb3d85de682aecdff103f5d3"
+                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/372c62a81b4ba95bbb3d85de682aecdff103f5d3",
-                    "reference": "372c62a81b4ba95bbb3d85de682aecdff103f5d3",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/896dcc9211ce275549f7de36c39e3d099372e9af",
+                    "reference": "896dcc9211ce275549f7de36c39e3d099372e9af",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
                     "php": "^8.5.12",
@@ -36,7 +36,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:43:31+00:00",
+                "time": "2026-11-05T13:56:43+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -103,7 +103,7 @@
                 ],
                 "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.1.1",
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             }

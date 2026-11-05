@@ -8,15 +8,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-infection.git",
-                    "reference": "66e677b76df60ace1774538b7ac75fc87bb8fe34"
+                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/66e677b76df60ace1774538b7ac75fc87bb8fe34",
-                    "reference": "66e677b76df60ace1774538b7ac75fc87bb8fe34",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/790173c2a55652dc12741fbbe3666ba3cd2e128b",
+                    "reference": "790173c2a55652dc12741fbbe3666ba3cd2e128b",
                     "shasum": ""
                 },
                 "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "infection/infection": "^0.35",
                     "php": "^8.5.12"
@@ -34,7 +35,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:43:28+00:00",
+                "time": "2026-11-05T13:56:37+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -138,7 +139,7 @@
                 ],
                 "description": "The bluenostrum Infection standard, shipped as the configuration every repository runs Infection with, and the composer infection command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-infection/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-infection/tree/2.0.1",
                     "issues": "https://github.com/bluenostrum/plugin-infection/issues"
                 }
             }

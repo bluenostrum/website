@@ -816,6 +816,103 @@
                     "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.2.0",
                     "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
                 }
+            },
+            {
+                "name": "bluenostrum/plugin-dependency-analyser",
+                "version": "2.2.1",
+                "version_normalized": "2.2.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-dependency-analyser.git",
+                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-dependency-analyser/zipball/56166c0f825630cb8b78e4d0d4a1b950d14511e7",
+                    "reference": "56166c0f825630cb8b78e4d0d4a1b950d14511e7",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1",
+                    "composer-plugin-api": "^2.6",
+                    "php": "^8.5.12",
+                    "shipmonk/composer-dependency-analyser": "^1.8.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.0",
+                    "bluenostrum/plugin-infection": "^2.0",
+                    "bluenostrum/plugin-phpcs": "^2.0",
+                    "bluenostrum/plugin-phpstan": "^2.0",
+                    "bluenostrum/plugin-phpunit": "^1.0",
+                    "bluenostrum/plugin-psalm": "^1.0",
+                    "bluenostrum/plugin-rector": "^2.0",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1"
+                },
+                "time": "2026-11-05T13:56:34+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer deps"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "dependency-analyser",
+                            "verify": [
+                                "deps"
+                            ]
+                        },
+                        "psalm": {
+                            "paths": [
+                                "composer-dependency-analyser.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\DependencyAnalyser\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\DependencyAnalyser\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "deps": [
+                        "@putenv XDEBUG_MODE=off",
+                        "composer-dependency-analyser"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The bluenostrum dependency analysis standard, shipped as the configuration every repository runs composer-dependency-analyser with, and the composer deps command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-dependency-analyser/tree/2.2.1",
+                    "issues": "https://github.com/bluenostrum/plugin-dependency-analyser/issues"
+                }
             }
         ]
     }

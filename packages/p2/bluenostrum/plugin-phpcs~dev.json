@@ -8,16 +8,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpcs.git",
-                    "reference": "79b80fef50f04c095ee4121729d9a5f92c5116c1"
+                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/79b80fef50f04c095ee4121729d9a5f92c5116c1",
-                    "reference": "79b80fef50f04c095ee4121729d9a5f92c5116c1",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/e4ca6acbc0619973ec3ca076f68bfe71802daad7",
+                    "reference": "e4ca6acbc0619973ec3ca076f68bfe71802daad7",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "doctrine/coding-standard": "^14.0",
                     "ext-dom": "*",
@@ -39,7 +39,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T06:43:29+00:00",
+                "time": "2026-11-05T13:56:40+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -140,7 +140,7 @@
                 ],
                 "description": "Custom PHP_CodeSniffer rules for bluenostrum architecture enforcement, with the composer phpcs command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.1",
                     "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
                 }
             }

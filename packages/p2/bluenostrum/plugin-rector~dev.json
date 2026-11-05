@@ -8,16 +8,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "988bad45afe92246880195c8f79db1109f8d6bd9"
+                    "reference": "9491acdf850e87382be7bceb0c2bc840be0bea74"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/988bad45afe92246880195c8f79db1109f8d6bd9",
-                    "reference": "988bad45afe92246880195c8f79db1109f8d6bd9",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9491acdf850e87382be7bceb0c2bc840be0bea74",
+                    "reference": "9491acdf850e87382be7bceb0c2bc840be0bea74",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.0",
+                    "bluenostrum/plugin-composer": "^1.1",
                     "composer-plugin-api": "^2.6",
                     "php": "^8.5.12",
                     "phpstan/phpstan": "^2.3",
@@ -38,7 +38,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T06:43:33+00:00",
+                "time": "2026-11-05T13:56:49+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -91,14 +91,8 @@
                             ]
                         },
                         "psalm": {
-                            "suppress": [
-                                {
-                                    "issue": "PropertyNotSetInConstructor",
-                                    "paths": [
-                                        "src/Rule"
-                                    ],
-                                    "reason": "Rector sets AbstractRector's services through autowire() after construction."
-                                }
+                            "stubs": [
+                                "resources/stubs/rector.php"
                             ]
                         }
                     },
@@ -139,7 +133,7 @@
                 ],
                 "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-rector/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.2.0",
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             }
