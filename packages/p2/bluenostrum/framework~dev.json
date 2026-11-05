@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
-                    "reference": "a078574578da947c130d4be941ea246ce3beed7a"
+                    "reference": "c5f9d68f9ff9640c6c0bd89980dd708d8fa2978b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/a078574578da947c130d4be941ea246ce3beed7a",
-                    "reference": "a078574578da947c130d4be941ea246ce3beed7a",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/c5f9d68f9ff9640c6c0bd89980dd708d8fa2978b",
+                    "reference": "c5f9d68f9ff9640c6c0bd89980dd708d8fa2978b",
                     "shasum": ""
                 },
                 "require": {
@@ -70,7 +70,7 @@
                     "bluenostrum/plugin-phpcs": "^2.1",
                     "bluenostrum/plugin-phpstan": "^2.2",
                     "bluenostrum/plugin-phpunit": "^1.1",
-                    "bluenostrum/plugin-psalm": "^1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.1",
                     "bluenostrum/plugin-rector": "^2.1",
                     "ext-intl": "*",
                     "ext-pdo_pgsql": "*",
@@ -85,7 +85,7 @@
                     "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
                     "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
                 },
-                "time": "2026-11-04T19:06:56+00:00",
+                "time": "2026-11-05T06:50:15+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/bluenostrum"
@@ -413,10 +413,6 @@
                         },
                         "psalm": {
                             "stubs": [
-                                {
-                                    "path": "resources/stubs/php85.php",
-                                    "preloadClasses": true
-                                },
                                 "resources/stubs/symfony.php"
                             ],
                             "suppress": [

@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpcs.git",
-                    "reference": "e43b161d0a405288a569033ab92645bcd93793b2"
+                    "reference": "79b80fef50f04c095ee4121729d9a5f92c5116c1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/e43b161d0a405288a569033ab92645bcd93793b2",
-                    "reference": "e43b161d0a405288a569033ab92645bcd93793b2",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/79b80fef50f04c095ee4121729d9a5f92c5116c1",
+                    "reference": "79b80fef50f04c095ee4121729d9a5f92c5116c1",
                     "shasum": ""
                 },
                 "require": {
@@ -39,7 +39,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-04T18:15:52+00:00",
+                "time": "2026-11-05T06:43:29+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

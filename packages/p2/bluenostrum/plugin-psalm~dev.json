@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "2ea0d44e0f03d1ab1124aa08485bb7610b166904"
+                    "reference": "1cb3b7f49f1dbb4709fb627b3635bb1c4592e41d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/2ea0d44e0f03d1ab1124aa08485bb7610b166904",
-                    "reference": "2ea0d44e0f03d1ab1124aa08485bb7610b166904",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/1cb3b7f49f1dbb4709fb627b3635bb1c4592e41d",
+                    "reference": "1cb3b7f49f1dbb4709fb627b3635bb1c4592e41d",
                     "shasum": ""
                 },
                 "require": {
@@ -37,7 +37,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T06:26:34+00:00",
+                "time": "2026-11-05T06:43:32+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -92,7 +92,7 @@
                 ],
                 "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.1.1",
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             }
