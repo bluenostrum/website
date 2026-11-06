@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "36ba9e9a576a3e47c990972eca02e1f29f66f110"
+                    "reference": "cf13d2b086b5662d58721aab54ce2fcfc7b74a0c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/36ba9e9a576a3e47c990972eca02e1f29f66f110",
-                    "reference": "36ba9e9a576a3e47c990972eca02e1f29f66f110",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/cf13d2b086b5662d58721aab54ce2fcfc7b74a0c",
+                    "reference": "cf13d2b086b5662d58721aab54ce2fcfc7b74a0c",
                     "shasum": ""
                 },
                 "require": {
@@ -38,7 +38,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-05T14:47:23+00:00",
+                "time": "2026-11-06T11:31:23+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

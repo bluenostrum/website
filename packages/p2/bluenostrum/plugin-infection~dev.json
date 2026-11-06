@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-infection.git",
-                    "reference": "dc9422c35c2f660f13ec0b7a7e18dce4cff72d93"
+                    "reference": "fcf2e6c023d05bbaf1f52ac559f1868458049631"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/dc9422c35c2f660f13ec0b7a7e18dce4cff72d93",
-                    "reference": "dc9422c35c2f660f13ec0b7a7e18dce4cff72d93",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/fcf2e6c023d05bbaf1f52ac559f1868458049631",
+                    "reference": "fcf2e6c023d05bbaf1f52ac559f1868458049631",
                     "shasum": ""
                 },
                 "require": {
@@ -35,7 +35,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/process": "^8.1"
                 },
-                "time": "2026-11-05T14:47:20+00:00",
+                "time": "2026-11-06T11:31:23+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

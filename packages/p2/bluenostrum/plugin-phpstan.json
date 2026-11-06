@@ -6136,6 +6136,156 @@
                     "source": "https://github.com/bluenostrum/plugin-phpstan/tree/2.4.1",
                     "issues": "https://github.com/bluenostrum/plugin-phpstan/issues"
                 }
+            },
+            {
+                "name": "bluenostrum/plugin-phpstan",
+                "version": "2.5.0",
+                "version_normalized": "2.5.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-phpstan.git",
+                    "reference": "0e5bcf89a30f46dacb5f1c7a4268219139877a00"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/0e5bcf89a30f46dacb5f1c7a4268219139877a00",
+                    "reference": "0e5bcf89a30f46dacb5f1c7a4268219139877a00",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1.0",
+                    "composer-plugin-api": "^2.6",
+                    "nette/neon": "^4.0",
+                    "php": "^8.5.12",
+                    "phpstan/phpstan": "^2.3",
+                    "phpstan/phpstan-deprecation-rules": "^2.0",
+                    "phpstan/phpstan-doctrine": "^2.0.12",
+                    "phpstan/phpstan-phpunit": "^2.1",
+                    "phpstan/phpstan-strict-rules": "^2.1",
+                    "phpstan/phpstan-symfony": "^2.1",
+                    "phpstan/phpstan-webmozart-assert": "^2.0",
+                    "tomasvotruba/type-coverage": "^2.5"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "composer/composer": "^2.10",
+                    "doctrine/orm": "^3.7",
+                    "nikic/php-parser": "^5.9",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "phpunit/phpunit": "^13.4.6",
+                    "psr/clock": "^1.0",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/process": "^8.1",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-06T14:45:54+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer phpstan"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "nikic/php-parser"
+                                    ],
+                                    "reason": "The rules run inside PHPStan, whose package ships the parser; requiring it would install a second copy. It stays in require-dev for bin/generate-sensitive-parameters."
+                                },
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "doctrine/orm",
+                                        "phpunit/phpunit",
+                                        "psr/clock",
+                                        "webmozart/assert"
+                                    ],
+                                    "reason": "The Doctrine mapping, PHPUnit, clock and Webmozart rules match those classes in the analysed code and name them only through ::class, which never autoloads them."
+                                }
+                            ]
+                        },
+                        "exclude": [
+                            {
+                                "paths": [
+                                    "tests/Rule/Fixture"
+                                ],
+                                "reason": "The code the rule tests analyse, never run: it names classes that do not exist, miscases names on purpose, and uses packages and extensions only to give the rules something to report."
+                            }
+                        ],
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            },
+                            "testsuites": {
+                                "rules": {
+                                    "directories": [
+                                        "tests"
+                                    ]
+                                }
+                            }
+                        },
+                        "plugin": {
+                            "settings": "phpstan",
+                            "verify": [
+                                "phpstan"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\PhpStan\\Composer\\Plugin",
+                    "phpstan": {
+                        "includes": [
+                            "extension.neon"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\PhpStan\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\PhpStan\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "phpstan": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpstan"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Custom PHPStan rules for bluenostrum architecture enforcement, with the composer phpstan command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-phpstan/tree/2.5.0",
+                    "issues": "https://github.com/bluenostrum/plugin-phpstan/issues"
+                }
             }
         ]
     }

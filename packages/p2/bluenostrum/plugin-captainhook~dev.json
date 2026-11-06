@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "80f85844a021375b976f591123c76858fe0c5dee"
+                    "reference": "396724580084a46a52b5099d2a57f21996d1fdc5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/80f85844a021375b976f591123c76858fe0c5dee",
-                    "reference": "80f85844a021375b976f591123c76858fe0c5dee",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/396724580084a46a52b5099d2a57f21996d1fdc5",
+                    "reference": "396724580084a46a52b5099d2a57f21996d1fdc5",
                     "shasum": ""
                 },
                 "require": {
@@ -43,7 +43,7 @@
                 "suggest": {
                     "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
                 },
-                "time": "2026-11-05T14:47:24+00:00",
+                "time": "2026-11-06T11:31:23+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
