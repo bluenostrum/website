@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
-                    "reference": "a9d0c14bc6336a8babaa81b61b594d15bf14924a"
+                    "reference": "35bbfea9c3df802ca4ce35d179e1b0871e01c4ce"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/a9d0c14bc6336a8babaa81b61b594d15bf14924a",
-                    "reference": "a9d0c14bc6336a8babaa81b61b594d15bf14924a",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/35bbfea9c3df802ca4ce35d179e1b0871e01c4ce",
+                    "reference": "35bbfea9c3df802ca4ce35d179e1b0871e01c4ce",
                     "shasum": ""
                 },
                 "require": {
@@ -85,7 +85,7 @@
                     "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
                     "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
                 },
-                "time": "2026-11-12T14:29:50+00:00",
+                "time": "2026-11-12T15:04:19+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/bluenostrum"
@@ -480,7 +480,7 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.75.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/1.75.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             }
