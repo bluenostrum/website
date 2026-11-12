@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "1fa304163e1f4a1b1e935c0862ccc56054d99986"
+                    "reference": "0e189e5c4d61cb97632455cbd2a022e28cd9a44f"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/1fa304163e1f4a1b1e935c0862ccc56054d99986",
-                    "reference": "1fa304163e1f4a1b1e935c0862ccc56054d99986",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/0e189e5c4d61cb97632455cbd2a022e28cd9a44f",
+                    "reference": "0e189e5c4d61cb97632455cbd2a022e28cd9a44f",
                     "shasum": ""
                 },
                 "require": {
@@ -21,8 +21,8 @@
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
                     "php": "^8.5.12",
-                    "psalm/plugin-phpunit": "^0.21",
-                    "vimeo/psalm": "^7.0.3"
+                    "psalm/plugin-phpunit": "^0.21.1",
+                    "vimeo/psalm": "^7.3.1"
                 },
                 "require-dev": {
                     "bluenostrum/plugin-captainhook": "^2.3.0",
@@ -32,12 +32,12 @@
                     "bluenostrum/plugin-phpstan": "^2.5.0",
                     "bluenostrum/plugin-phpunit": "^1.1.1",
                     "bluenostrum/plugin-rector": "^2.2.1",
-                    "composer/composer": "^2.10",
-                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "composer/composer": "^2.11.2",
+                    "php-parallel-lint/php-parallel-lint": "^1.4.0",
                     "roave/security-advisories": "dev-latest",
-                    "symfony/process": "^8.1"
+                    "symfony/process": "^8.1.10"
                 },
-                "time": "2026-11-06T14:55:44+00:00",
+                "time": "2026-11-12T12:33:17+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

@@ -8,20 +8,20 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "0ae684716e35b4e8c4e2a641d064881880e1701f"
+                    "reference": "57903443d35be2c8b9ba0bd560861e76cb54ab5e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/0ae684716e35b4e8c4e2a641d064881880e1701f",
-                    "reference": "0ae684716e35b4e8c4e2a641d064881880e1701f",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/57903443d35be2c8b9ba0bd560861e76cb54ab5e",
+                    "reference": "57903443d35be2c8b9ba0bd560861e76cb54ab5e",
                     "shasum": ""
                 },
                 "require": {
                     "bluenostrum/plugin-composer": "^1.1.0",
-                    "captainhook/captainhook-phar": "^5.29",
-                    "captainhook/plugin-composer": "^5.3",
+                    "captainhook/captainhook-phar": "^5.29.2",
+                    "captainhook/plugin-composer": "^5.3.3",
                     "composer-plugin-api": "^2.6",
-                    "ergebnis/composer-normalize": "^2.56",
+                    "ergebnis/composer-normalize": "^2.56.1",
                     "php": "^8.5.12",
                     "ramsey/conventional-commits": "^1.7"
                 },
@@ -33,17 +33,17 @@
                     "bluenostrum/plugin-phpunit": "^1.1.1",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
-                    "composer/composer": "^2.10",
+                    "composer/composer": "^2.11.2",
                     "composer/xdebug-handler": "^3.0.5",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
-                    "symfony/console": "^8.1",
-                    "symfony/process": "^8.1"
+                    "symfony/console": "^8.1.11",
+                    "symfony/process": "^8.1.10"
                 },
                 "suggest": {
                     "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
                 },
-                "time": "2026-11-06T15:04:48+00:00",
+                "time": "2026-11-12T12:50:53+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

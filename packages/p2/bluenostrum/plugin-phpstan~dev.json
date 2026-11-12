@@ -8,27 +8,27 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpstan.git",
-                    "reference": "0e5bcf89a30f46dacb5f1c7a4268219139877a00"
+                    "reference": "aaae2e4ae7bcf1534d9499baa3794330bf052e8d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/0e5bcf89a30f46dacb5f1c7a4268219139877a00",
-                    "reference": "0e5bcf89a30f46dacb5f1c7a4268219139877a00",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/aaae2e4ae7bcf1534d9499baa3794330bf052e8d",
+                    "reference": "aaae2e4ae7bcf1534d9499baa3794330bf052e8d",
                     "shasum": ""
                 },
                 "require": {
                     "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
-                    "nette/neon": "^4.0",
+                    "nette/neon": "^4.0.1",
                     "php": "^8.5.12",
-                    "phpstan/phpstan": "^2.3",
-                    "phpstan/phpstan-deprecation-rules": "^2.0",
-                    "phpstan/phpstan-doctrine": "^2.0.12",
-                    "phpstan/phpstan-phpunit": "^2.1",
-                    "phpstan/phpstan-strict-rules": "^2.1",
-                    "phpstan/phpstan-symfony": "^2.1",
+                    "phpstan/phpstan": "^2.3.5",
+                    "phpstan/phpstan-deprecation-rules": "^2.0.5",
+                    "phpstan/phpstan-doctrine": "^2.1.2",
+                    "phpstan/phpstan-phpunit": "^2.1.1",
+                    "phpstan/phpstan-strict-rules": "^2.1.1",
+                    "phpstan/phpstan-symfony": "^2.1.1",
                     "phpstan/phpstan-webmozart-assert": "^2.0",
-                    "tomasvotruba/type-coverage": "^2.5"
+                    "tomasvotruba/type-coverage": "^2.5.1"
                 },
                 "require-dev": {
                     "bluenostrum/plugin-captainhook": "^2.3.0",
@@ -38,17 +38,17 @@
                     "bluenostrum/plugin-phpunit": "^1.1.1",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
-                    "composer/composer": "^2.10",
-                    "doctrine/orm": "^3.7",
+                    "composer/composer": "^2.11.2",
+                    "doctrine/orm": "^3.7.6",
                     "nikic/php-parser": "^5.9",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "phpunit/phpunit": "^13.4.6",
                     "psr/clock": "^1.0",
                     "roave/security-advisories": "dev-latest",
-                    "symfony/process": "^8.1",
+                    "symfony/process": "^8.1.10",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-06T14:45:54+00:00",
+                "time": "2026-11-12T12:44:00+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -148,7 +148,7 @@
                 ],
                 "description": "Custom PHPStan rules for bluenostrum architecture enforcement, with the composer phpstan command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpstan/tree/2.5.0",
+                    "source": "https://github.com/bluenostrum/plugin-phpstan/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-phpstan/issues"
                 }
             }
