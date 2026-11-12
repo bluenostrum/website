@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "57903443d35be2c8b9ba0bd560861e76cb54ab5e"
+                    "reference": "bfb808319153c9c3e318e6f730be7ed536759a6a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/57903443d35be2c8b9ba0bd560861e76cb54ab5e",
-                    "reference": "57903443d35be2c8b9ba0bd560861e76cb54ab5e",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/bfb808319153c9c3e318e6f730be7ed536759a6a",
+                    "reference": "bfb808319153c9c3e318e6f730be7ed536759a6a",
                     "shasum": ""
                 },
                 "require": {
@@ -30,7 +30,7 @@
                     "bluenostrum/plugin-infection": "^2.0.1",
                     "bluenostrum/plugin-phpcs": "^2.1.1",
                     "bluenostrum/plugin-phpstan": "^2.5.0",
-                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.11.2",
@@ -43,7 +43,7 @@
                 "suggest": {
                     "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
                 },
-                "time": "2026-11-12T12:50:53+00:00",
+                "time": "2026-11-12T16:45:16+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -111,7 +111,7 @@
                 ],
                 "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.3.1",
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             }

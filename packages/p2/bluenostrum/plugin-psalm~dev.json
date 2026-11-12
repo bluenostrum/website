@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "0e189e5c4d61cb97632455cbd2a022e28cd9a44f"
+                    "reference": "ff144978652e13ddd1258c0078dd3bb88ab4628b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/0e189e5c4d61cb97632455cbd2a022e28cd9a44f",
-                    "reference": "0e189e5c4d61cb97632455cbd2a022e28cd9a44f",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/ff144978652e13ddd1258c0078dd3bb88ab4628b",
+                    "reference": "ff144978652e13ddd1258c0078dd3bb88ab4628b",
                     "shasum": ""
                 },
                 "require": {
@@ -30,14 +30,14 @@
                     "bluenostrum/plugin-infection": "^2.0.1",
                     "bluenostrum/plugin-phpcs": "^2.1.1",
                     "bluenostrum/plugin-phpstan": "^2.5.0",
-                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.11.2",
                     "php-parallel-lint/php-parallel-lint": "^1.4.0",
                     "roave/security-advisories": "dev-latest",
-                    "symfony/process": "^8.1.10"
+                    "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-12T12:33:17+00:00",
+                "time": "2026-11-12T16:18:43+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

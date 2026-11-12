@@ -2642,6 +2642,148 @@
                     "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.1",
                     "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
                 }
+            },
+            {
+                "name": "bluenostrum/plugin-phpcs",
+                "version": "2.1.2",
+                "version_normalized": "2.1.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-phpcs.git",
+                    "reference": "12ae125a30a187e116af4b90727d3b2fe86aa28d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/12ae125a30a187e116af4b90727d3b2fe86aa28d",
+                    "reference": "12ae125a30a187e116af4b90727d3b2fe86aa28d",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1.0",
+                    "composer-plugin-api": "^2.6",
+                    "doctrine/coding-standard": "^14.0",
+                    "ext-dom": "*",
+                    "ext-tokenizer": "*",
+                    "php": "^8.5.12",
+                    "squizlabs/php_codesniffer": "^4.0.4"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-phpunit": "^1.2.0",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1.11",
+                    "webmozart/assert": "^2.5"
+                },
+                "time": "2026-11-12T16:45:15+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer phpcs"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "dev-dependency-in-prod"
+                                    ],
+                                    "packages": [
+                                        "webmozart/assert"
+                                    ],
+                                    "paths": [
+                                        "src/Bluenostrum/Sniffs/Webmozart/AssertSniff.php"
+                                    ],
+                                    "reason": "AssertSniff matches calls to Webmozart\\Assert\\Assert in the code it sniffs and names the class only through ::class, which never autoloads it."
+                                }
+                            ]
+                        },
+                        "exclude": [
+                            {
+                                "paths": [
+                                    "tests/Fixture"
+                                ],
+                                "reason": "The sniff fixtures hold the code the sniffs report."
+                            }
+                        ],
+                        "phpunit": {
+                            "const": {
+                                "PHP_CODESNIFFER_CBF": false,
+                                "PHP_CODESNIFFER_VERBOSITY": 0
+                            },
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "phpcs",
+                            "verify": [
+                                "phpcs"
+                            ]
+                        },
+                        "psalm": {
+                            "stubs": [
+                                "vendor/squizlabs/php_codesniffer/src/Sniffs/Sniff.php",
+                                "vendor/squizlabs/php_codesniffer/src/Files/File.php",
+                                "vendor/squizlabs/php_codesniffer/src/Files/LocalFile.php",
+                                "vendor/squizlabs/php_codesniffer/src/Config.php",
+                                "vendor/squizlabs/php_codesniffer/src/Ruleset.php",
+                                "vendor/squizlabs/php_codesniffer/src/Fixer.php"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\": "src/Bluenostrum/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Tests\\": "tests/"
+                    },
+                    "files": [
+                        "vendor/squizlabs/php_codesniffer/autoload.php",
+                        "vendor/squizlabs/php_codesniffer/src/Util/Tokens.php"
+                    ]
+                },
+                "scripts": {
+                    "phpcbf": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpcs --fix"
+                    ],
+                    "phpcs": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpcs"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "Custom PHP_CodeSniffer rules for bluenostrum architecture enforcement, with the composer phpcs command",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.2",
+                    "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
+                }
             }
         ]
     }

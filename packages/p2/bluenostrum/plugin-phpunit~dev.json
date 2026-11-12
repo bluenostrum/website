@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "704df660b203c9167a6d62e1f657ee3192aa2f52"
+                    "reference": "53558fef2b8fde6a1940e79fb7584783e556df61"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/704df660b203c9167a6d62e1f657ee3192aa2f52",
-                    "reference": "704df660b203c9167a6d62e1f657ee3192aa2f52",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/53558fef2b8fde6a1940e79fb7584783e556df61",
+                    "reference": "53558fef2b8fde6a1940e79fb7584783e556df61",
                     "shasum": ""
                 },
                 "require": {
@@ -32,12 +32,12 @@
                     "bluenostrum/plugin-phpstan": "^2.5.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
-                    "composer/composer": "^2.10",
+                    "composer/composer": "^2.11.2",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-12T15:59:59+00:00",
+                "time": "2026-11-12T16:31:13+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -110,7 +110,7 @@
                 ],
                 "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.2.0",
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             }

@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-infection.git",
-                    "reference": "3ab97915a59d87d0de63f91087a1e4c790599081"
+                    "reference": "fdec6878ac9bda64eb34c85262bb617fac87de86"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/3ab97915a59d87d0de63f91087a1e4c790599081",
-                    "reference": "3ab97915a59d87d0de63f91087a1e4c790599081",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-infection/zipball/fdec6878ac9bda64eb34c85262bb617fac87de86",
+                    "reference": "fdec6878ac9bda64eb34c85262bb617fac87de86",
                     "shasum": ""
                 },
                 "require": {
@@ -27,15 +27,16 @@
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-phpcs": "^2.1.1",
                     "bluenostrum/plugin-phpstan": "^2.5.0",
-                    "bluenostrum/plugin-phpunit": "^1.1.1",
+                    "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.11.2",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1.11",
                     "symfony/process": "^8.1.10"
                 },
-                "time": "2026-11-12T12:44:07+00:00",
+                "time": "2026-11-12T16:23:28+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
