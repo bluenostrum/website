@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpcs.git",
-                    "reference": "12ae125a30a187e116af4b90727d3b2fe86aa28d"
+                    "reference": "ad10aa0abfa46bec4a9a4f3cb019e052e18774bd"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/12ae125a30a187e116af4b90727d3b2fe86aa28d",
-                    "reference": "12ae125a30a187e116af4b90727d3b2fe86aa28d",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpcs/zipball/ad10aa0abfa46bec4a9a4f3cb019e052e18774bd",
+                    "reference": "ad10aa0abfa46bec4a9a4f3cb019e052e18774bd",
                     "shasum": ""
                 },
                 "require": {
@@ -26,10 +26,10 @@
                     "squizlabs/php_codesniffer": "^4.0.4"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.1",
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-phpstan": "^2.5.1",
                     "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
@@ -39,7 +39,7 @@
                     "symfony/console": "^8.1.11",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-12T16:45:15+00:00",
+                "time": "2026-11-12T16:57:58+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -140,7 +140,7 @@
                 ],
                 "description": "Custom PHP_CodeSniffer rules for bluenostrum architecture enforcement, with the composer phpcs command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/2.1.2",
+                    "source": "https://github.com/bluenostrum/plugin-phpcs/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-phpcs/issues"
                 }
             }

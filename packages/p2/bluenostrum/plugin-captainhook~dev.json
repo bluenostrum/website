@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-captainhook.git",
-                    "reference": "bfb808319153c9c3e318e6f730be7ed536759a6a"
+                    "reference": "48ff7225c03ea568440da2c1614c5cbdbb9ea719"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/bfb808319153c9c3e318e6f730be7ed536759a6a",
-                    "reference": "bfb808319153c9c3e318e6f730be7ed536759a6a",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-captainhook/zipball/48ff7225c03ea568440da2c1614c5cbdbb9ea719",
+                    "reference": "48ff7225c03ea568440da2c1614c5cbdbb9ea719",
                     "shasum": ""
                 },
                 "require": {
@@ -28,8 +28,8 @@
                 "require-dev": {
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.1",
-                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-phpcs": "^2.1.2",
+                    "bluenostrum/plugin-phpstan": "^2.5.1",
                     "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
@@ -43,7 +43,7 @@
                 "suggest": {
                     "ext-pcntl": "Lets verify stop its commands, and what they started, on Ctrl-C"
                 },
-                "time": "2026-11-12T16:45:16+00:00",
+                "time": "2026-11-12T16:58:52+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -111,7 +111,7 @@
                 ],
                 "description": "Shared git hooks and the check, ci, pre-commit and pre-push pipelines for bluenostrum repositories, as Composer commands",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/2.3.1",
+                    "source": "https://github.com/bluenostrum/plugin-captainhook/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-captainhook/issues"
                 }
             }

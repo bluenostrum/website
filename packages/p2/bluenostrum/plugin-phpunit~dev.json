@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "53558fef2b8fde6a1940e79fb7584783e556df61"
+                    "reference": "ae57090a4aedf841a5f7a32da08459a0916db01b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/53558fef2b8fde6a1940e79fb7584783e556df61",
-                    "reference": "53558fef2b8fde6a1940e79fb7584783e556df61",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/ae57090a4aedf841a5f7a32da08459a0916db01b",
+                    "reference": "ae57090a4aedf841a5f7a32da08459a0916db01b",
                     "shasum": ""
                 },
                 "require": {
@@ -25,11 +25,11 @@
                     "phpunit/phpunit": "^13.4.6"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.1",
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.1",
-                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-phpcs": "^2.1.2",
+                    "bluenostrum/plugin-phpstan": "^2.5.1",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.11.2",
@@ -37,7 +37,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-12T16:31:13+00:00",
+                "time": "2026-11-12T16:58:09+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

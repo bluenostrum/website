@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpstan.git",
-                    "reference": "c3e63e5a6624a548d367630d64477d2540e5f00a"
+                    "reference": "d95b3ee868b5c520a93eb9f57cac5ad7ce6bc96a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/c3e63e5a6624a548d367630d64477d2540e5f00a",
-                    "reference": "c3e63e5a6624a548d367630d64477d2540e5f00a",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpstan/zipball/d95b3ee868b5c520a93eb9f57cac5ad7ce6bc96a",
+                    "reference": "d95b3ee868b5c520a93eb9f57cac5ad7ce6bc96a",
                     "shasum": ""
                 },
                 "require": {
@@ -31,10 +31,10 @@
                     "tomasvotruba/type-coverage": "^2.5.1"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.1",
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.2",
                     "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "bluenostrum/plugin-rector": "^2.2.1",
@@ -48,7 +48,7 @@
                     "symfony/console": "^8.1.11",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-12T16:51:04+00:00",
+                "time": "2026-11-12T16:58:02+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -148,7 +148,7 @@
                 ],
                 "description": "Custom PHPStan rules for bluenostrum architecture enforcement, with the composer phpstan command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpstan/tree/2.5.1",
+                    "source": "https://github.com/bluenostrum/plugin-phpstan/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-phpstan/issues"
                 }
             }

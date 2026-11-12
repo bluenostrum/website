@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "cf9bfb5ddd11796a56635ce2d73ccf6bd475e59d"
+                    "reference": "9db475d0744f5fecccea79885fcf5b1cb86f4df1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/cf9bfb5ddd11796a56635ce2d73ccf6bd475e59d",
-                    "reference": "cf9bfb5ddd11796a56635ce2d73ccf6bd475e59d",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9db475d0744f5fecccea79885fcf5b1cb86f4df1",
+                    "reference": "9db475d0744f5fecccea79885fcf5b1cb86f4df1",
                     "shasum": ""
                 },
                 "require": {
@@ -24,11 +24,11 @@
                     "rector/rector": "^2.8"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.1",
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.1",
-                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-phpcs": "^2.1.2",
+                    "bluenostrum/plugin-phpstan": "^2.5.1",
                     "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-psalm": "^1.1.2",
                     "composer/composer": "^2.10",
@@ -39,7 +39,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-12T16:32:50+00:00",
+                "time": "2026-11-12T16:58:18+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {

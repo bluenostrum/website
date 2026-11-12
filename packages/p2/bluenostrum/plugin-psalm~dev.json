@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "ff144978652e13ddd1258c0078dd3bb88ab4628b"
+                    "reference": "8906b5ca0f40f117ebe63131af419f68efd82de3"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/ff144978652e13ddd1258c0078dd3bb88ab4628b",
-                    "reference": "ff144978652e13ddd1258c0078dd3bb88ab4628b",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/8906b5ca0f40f117ebe63131af419f68efd82de3",
+                    "reference": "8906b5ca0f40f117ebe63131af419f68efd82de3",
                     "shasum": ""
                 },
                 "require": {
@@ -25,11 +25,11 @@
                     "vimeo/psalm": "^7.3.1"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-captainhook": "^2.3.1",
                     "bluenostrum/plugin-dependency-analyser": "^2.2.1",
                     "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.1",
-                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-phpcs": "^2.1.2",
+                    "bluenostrum/plugin-phpstan": "^2.5.1",
                     "bluenostrum/plugin-phpunit": "^1.2.0",
                     "bluenostrum/plugin-rector": "^2.2.1",
                     "composer/composer": "^2.11.2",
@@ -37,7 +37,7 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-12T16:18:43+00:00",
+                "time": "2026-11-12T16:58:12+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
