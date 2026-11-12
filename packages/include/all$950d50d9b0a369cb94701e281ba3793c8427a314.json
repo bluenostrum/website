@@ -39749,25 +39749,26 @@
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             },
-            "dev-main": {
+            "1.2.0": {
                 "name": "bluenostrum/plugin-phpunit",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "09a662da8780af9e2f8912a39d74fb9eaf79560b"
+                    "reference": "704df660b203c9167a6d62e1f657ee3192aa2f52"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/09a662da8780af9e2f8912a39d74fb9eaf79560b",
-                    "reference": "09a662da8780af9e2f8912a39d74fb9eaf79560b",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/704df660b203c9167a6d62e1f657ee3192aa2f52",
+                    "reference": "704df660b203c9167a6d62e1f657ee3192aa2f52",
                     "shasum": ""
                 },
                 "require": {
                     "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
+                    "ext-libxml": "*",
                     "php": "^8.5.12",
                     "phpunit/phpunit": "^13.4.6"
                 },
@@ -39782,14 +39783,16 @@
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
-                    "symfony/process": "^8.1"
+                    "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-06T14:55:44+00:00",
-                "default-branch": true,
+                "time": "2026-11-12T15:59:59+00:00",
                 "type": "composer-plugin",
                 "extra": {
                     "bluenostrum": {
                         "captainhook": {
+                            "ci": [
+                                "composer coverage"
+                            ],
                             "verify": [
                                 "composer phpunit"
                             ]
@@ -39808,6 +39811,9 @@
                             ]
                         },
                         "plugin": {
+                            "ci": [
+                                "coverage"
+                            ],
                             "settings": "phpunit",
                             "verify": [
                                 "phpunit"
@@ -39851,7 +39857,120 @@
                 ],
                 "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-phpunit",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-phpunit.git",
+                    "reference": "704df660b203c9167a6d62e1f657ee3192aa2f52"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/704df660b203c9167a6d62e1f657ee3192aa2f52",
+                    "reference": "704df660b203c9167a6d62e1f657ee3192aa2f52",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1.0",
+                    "composer-plugin-api": "^2.6",
+                    "ext-dom": "*",
+                    "ext-libxml": "*",
+                    "php": "^8.5.12",
+                    "phpunit/phpunit": "^13.4.6"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.3.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.1",
+                    "bluenostrum/plugin-phpstan": "^2.5.0",
+                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "composer/composer": "^2.10",
+                    "php-parallel-lint/php-parallel-lint": "^1.4",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1.11"
+                },
+                "time": "2026-11-12T15:59:59+00:00",
+                "default-branch": true,
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "ci": [
+                                "composer coverage"
+                            ],
+                            "verify": [
+                                "composer phpunit"
+                            ]
+                        },
+                        "dependency-analyser": {
+                            "ignore": [
+                                {
+                                    "errors": [
+                                        "prod-dependency-only-in-dev"
+                                    ],
+                                    "packages": [
+                                        "phpunit/phpunit"
+                                    ],
+                                    "reason": "The commands run PHPUnit as an executable, so no production code names its classes; the package requires it so a project gets PHPUnit from the package alone."
+                                }
+                            ]
+                        },
+                        "plugin": {
+                            "ci": [
+                                "coverage"
+                            ],
+                            "settings": "phpunit",
+                            "verify": [
+                                "phpunit"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\PhpUnit\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\PhpUnit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\PhpUnit\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "coverage": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php coverage"
+                    ],
+                    "phpunit": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php phpunit"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The composer phpunit and coverage commands, running PHPUnit on the configuration every bluenostrum repository shares",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-phpunit/tree/1.2.0",
                     "issues": "https://github.com/bluenostrum/plugin-phpunit/issues"
                 }
             }
