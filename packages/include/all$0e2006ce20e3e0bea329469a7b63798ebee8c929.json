@@ -43195,19 +43195,19 @@
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             },
-            "dev-main": {
+            "1.2.0": {
                 "name": "bluenostrum/plugin-psalm",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "8906b5ca0f40f117ebe63131af419f68efd82de3"
+                    "reference": "3e6159a24cc53bf287e491c2e61df966d9f245a5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/8906b5ca0f40f117ebe63131af419f68efd82de3",
-                    "reference": "8906b5ca0f40f117ebe63131af419f68efd82de3",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/3e6159a24cc53bf287e491c2e61df966d9f245a5",
+                    "reference": "3e6159a24cc53bf287e491c2e61df966d9f245a5",
                     "shasum": ""
                 },
                 "require": {
@@ -43216,7 +43216,7 @@
                     "ext-dom": "*",
                     "php": "^8.5.12",
                     "psalm/plugin-phpunit": "^0.21.1",
-                    "vimeo/psalm": "^7.3.1"
+                    "vimeo/psalm": "^7.11.0"
                 },
                 "require-dev": {
                     "bluenostrum/plugin-captainhook": "^2.3.1",
@@ -43231,7 +43231,101 @@
                     "roave/security-advisories": "dev-latest",
                     "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-12T16:58:12+00:00",
+                "time": "2026-11-19T08:26:28+00:00",
+                "type": "composer-plugin",
+                "extra": {
+                    "bluenostrum": {
+                        "captainhook": {
+                            "verify": [
+                                "composer psalm"
+                            ]
+                        },
+                        "phpunit": {
+                            "ini": {
+                                "zend.assertions": "0"
+                            }
+                        },
+                        "plugin": {
+                            "settings": "psalm",
+                            "verify": [
+                                "psalm"
+                            ]
+                        }
+                    },
+                    "captainhook": {
+                        "config": "vendor/bluenostrum/plugin-captainhook/captainhook.json",
+                        "force-install": true
+                    },
+                    "class": "Bluenostrum\\Psalm\\Composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Bluenostrum\\Psalm\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bluenostrum\\Psalm\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "psalm": [
+                        "@putenv XDEBUG_MODE=off",
+                        "@php tests/Composer/run.php psalm"
+                    ]
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "authors": [
+                    {
+                        "name": "Antonio del Olmo",
+                        "email": "adelolmo@bluenostrum.com"
+                    }
+                ],
+                "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
+                "support": {
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.2.0",
+                    "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
+                }
+            },
+            "dev-main": {
+                "name": "bluenostrum/plugin-psalm",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:bluenostrum/plugin-psalm.git",
+                    "reference": "3e6159a24cc53bf287e491c2e61df966d9f245a5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/3e6159a24cc53bf287e491c2e61df966d9f245a5",
+                    "reference": "3e6159a24cc53bf287e491c2e61df966d9f245a5",
+                    "shasum": ""
+                },
+                "require": {
+                    "bluenostrum/plugin-composer": "^1.1.0",
+                    "composer-plugin-api": "^2.6",
+                    "ext-dom": "*",
+                    "php": "^8.5.12",
+                    "psalm/plugin-phpunit": "^0.21.1",
+                    "vimeo/psalm": "^7.11.0"
+                },
+                "require-dev": {
+                    "bluenostrum/plugin-captainhook": "^2.3.1",
+                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
+                    "bluenostrum/plugin-infection": "^2.0.1",
+                    "bluenostrum/plugin-phpcs": "^2.1.2",
+                    "bluenostrum/plugin-phpstan": "^2.5.1",
+                    "bluenostrum/plugin-phpunit": "^1.2.0",
+                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "composer/composer": "^2.11.2",
+                    "php-parallel-lint/php-parallel-lint": "^1.4.0",
+                    "roave/security-advisories": "dev-latest",
+                    "symfony/console": "^8.1.11"
+                },
+                "time": "2026-11-19T08:26:28+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -43286,7 +43380,7 @@
                 ],
                 "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.2.0",
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             }
