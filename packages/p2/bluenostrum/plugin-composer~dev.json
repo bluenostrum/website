@@ -8,30 +8,30 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-composer.git",
-                    "reference": "d6ee49ac6a19072b06a70b30c4ce6888dc23b371"
+                    "reference": "55bcbdd0d1a51e47626b089bb66071dc8fc6dd9a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-composer/zipball/d6ee49ac6a19072b06a70b30c4ce6888dc23b371",
-                    "reference": "d6ee49ac6a19072b06a70b30c4ce6888dc23b371",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-composer/zipball/55bcbdd0d1a51e47626b089bb66071dc8fc6dd9a",
+                    "reference": "55bcbdd0d1a51e47626b089bb66071dc8fc6dd9a",
                     "shasum": ""
                 },
                 "require": {
                     "php": "^8.6"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
-                    "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.2",
-                    "bluenostrum/plugin-phpstan": "^2.5.1",
-                    "bluenostrum/plugin-phpunit": "^1.2.0",
+                    "bluenostrum/plugin-captainhook": "^2.4.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.3.0",
+                    "bluenostrum/plugin-infection": "^2.1.0",
+                    "bluenostrum/plugin-phpcs": "^2.2.0",
+                    "bluenostrum/plugin-phpstan": "^2.6.0",
+                    "bluenostrum/plugin-phpunit": "^1.3.0",
                     "bluenostrum/plugin-psalm": "^1.3.0",
-                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "bluenostrum/plugin-rector": "^2.3.0",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest"
                 },
-                "time": "2026-11-20T10:05:19+00:00",
+                "time": "2026-11-20T10:15:27+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -64,7 +64,7 @@
                 ],
                 "description": "What every bluenostrum tool plugin shares: the project's composer.json and installed packages, the settings problems, and the paths every tool leaves alone",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-composer/tree/1.2.0",
+                    "source": "https://github.com/bluenostrum/plugin-composer/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-composer/issues"
                 }
             }

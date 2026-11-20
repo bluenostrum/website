@@ -8,16 +8,16 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-psalm.git",
-                    "reference": "2b29a4094a89cb29b71199fb05a558b19a6c70ae"
+                    "reference": "0d111f410a7905cb5b56d7082dd88b072bd3033c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/2b29a4094a89cb29b71199fb05a558b19a6c70ae",
-                    "reference": "2b29a4094a89cb29b71199fb05a558b19a6c70ae",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-psalm/zipball/0d111f410a7905cb5b56d7082dd88b072bd3033c",
+                    "reference": "0d111f410a7905cb5b56d7082dd88b072bd3033c",
                     "shasum": ""
                 },
                 "require": {
-                    "bluenostrum/plugin-composer": "^1.1.0",
+                    "bluenostrum/plugin-composer": "^1.2.0",
                     "composer-plugin-api": "^2.6",
                     "ext-dom": "*",
                     "php": "^8.6",
@@ -25,19 +25,19 @@
                     "vimeo/psalm": "^7.12.0"
                 },
                 "require-dev": {
-                    "bluenostrum/plugin-captainhook": "^2.3.1",
-                    "bluenostrum/plugin-dependency-analyser": "^2.2.1",
-                    "bluenostrum/plugin-infection": "^2.0.1",
-                    "bluenostrum/plugin-phpcs": "^2.1.2",
-                    "bluenostrum/plugin-phpstan": "^2.5.1",
-                    "bluenostrum/plugin-phpunit": "^1.2.0",
-                    "bluenostrum/plugin-rector": "^2.2.1",
+                    "bluenostrum/plugin-captainhook": "^2.4.0",
+                    "bluenostrum/plugin-dependency-analyser": "^2.3.0",
+                    "bluenostrum/plugin-infection": "^2.1.0",
+                    "bluenostrum/plugin-phpcs": "^2.2.0",
+                    "bluenostrum/plugin-phpstan": "^2.6.0",
+                    "bluenostrum/plugin-phpunit": "^1.3.0",
+                    "bluenostrum/plugin-rector": "^2.3.0",
                     "composer/composer": "^2.11.2",
                     "php-parallel-lint/php-parallel-lint": "^1.4.0",
                     "roave/security-advisories": "dev-latest",
                     "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-20T08:44:57+00:00",
+                "time": "2026-11-20T10:15:39+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -92,7 +92,7 @@
                 ],
                 "description": "The composer psalm command, running Psalm on the configuration every bluenostrum repository shares",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/1.3.0",
+                    "source": "https://github.com/bluenostrum/plugin-psalm/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-psalm/issues"
                 }
             }
