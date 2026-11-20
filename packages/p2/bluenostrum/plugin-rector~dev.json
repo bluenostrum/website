@@ -8,18 +8,18 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "9db475d0744f5fecccea79885fcf5b1cb86f4df1"
+                    "reference": "7d37a52dc60293be150f0953a0d415a27efafe73"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/9db475d0744f5fecccea79885fcf5b1cb86f4df1",
-                    "reference": "9db475d0744f5fecccea79885fcf5b1cb86f4df1",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/7d37a52dc60293be150f0953a0d415a27efafe73",
+                    "reference": "7d37a52dc60293be150f0953a0d415a27efafe73",
                     "shasum": ""
                 },
                 "require": {
                     "bluenostrum/plugin-composer": "^1.1.0",
                     "composer-plugin-api": "^2.6",
-                    "php": "^8.5.12",
+                    "php": "^8.6",
                     "phpstan/phpstan": "^2.3",
                     "rector/rector": "^2.8"
                 },
@@ -30,7 +30,7 @@
                     "bluenostrum/plugin-phpcs": "^2.1.2",
                     "bluenostrum/plugin-phpstan": "^2.5.1",
                     "bluenostrum/plugin-phpunit": "^1.2.0",
-                    "bluenostrum/plugin-psalm": "^1.1.2",
+                    "bluenostrum/plugin-psalm": "^1.3.0",
                     "composer/composer": "^2.10",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "phpunit/phpunit": "^13.4.6",
@@ -39,7 +39,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-12T16:58:18+00:00",
+                "time": "2026-11-20T10:05:23+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -134,7 +134,7 @@
                 ],
                 "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-rector/tree/main",
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.3.0",
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             }
