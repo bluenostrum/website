@@ -1,10 +1,10 @@
 {
     "packages": {
         "bluenostrum/framework": {
-            "1.0.0": {
+            "0.0.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.0.0",
-                "version_normalized": "1.0.0.0",
+                "version": "0.0.0",
+                "version_normalized": "0.0.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -181,14 +181,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS, event sourcing, and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.0.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.0.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.0.1": {
+            "0.0.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.0.1",
-                "version_normalized": "1.0.1.0",
+                "version": "0.0.1",
+                "version_normalized": "0.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -365,14 +365,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS, event sourcing, and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.0.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.0.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.0.2": {
+            "0.0.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.0.2",
-                "version_normalized": "1.0.2.0",
+                "version": "0.0.2",
+                "version_normalized": "0.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -549,14 +549,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS, event sourcing, and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.0.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.0.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.0.3": {
+            "0.0.3": {
                 "name": "bluenostrum/framework",
-                "version": "1.0.3",
-                "version_normalized": "1.0.3.0",
+                "version": "0.0.3",
+                "version_normalized": "0.0.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -733,14 +733,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS, event sourcing, and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.0.3",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.0.3",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.0.4": {
+            "0.0.4": {
                 "name": "bluenostrum/framework",
-                "version": "1.0.4",
-                "version_normalized": "1.0.4.0",
+                "version": "0.0.4",
+                "version_normalized": "0.0.4.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -913,14 +913,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS, event sourcing, and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.0.4",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.0.4",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.1.0": {
+            "0.1.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.1.0",
-                "version_normalized": "1.1.0.0",
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -1094,14 +1094,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.1.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.1.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.10.0": {
+            "0.10.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.10.0",
-                "version_normalized": "1.10.0.0",
+                "version": "0.10.0",
+                "version_normalized": "0.10.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -1280,14 +1280,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.10.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.10.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.10.1": {
+            "0.10.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.10.1",
-                "version_normalized": "1.10.1.0",
+                "version": "0.10.1",
+                "version_normalized": "0.10.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -1466,14 +1466,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.10.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.10.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.11.0": {
+            "0.11.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.11.0",
-                "version_normalized": "1.11.0.0",
+                "version": "0.11.0",
+                "version_normalized": "0.11.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -1652,14 +1652,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.11.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.11.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.11.1": {
+            "0.11.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.11.1",
-                "version_normalized": "1.11.1.0",
+                "version": "0.11.1",
+                "version_normalized": "0.11.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -1838,14 +1838,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.11.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.11.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.0": {
+            "0.12.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.0",
-                "version_normalized": "1.12.0.0",
+                "version": "0.12.0",
+                "version_normalized": "0.12.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -2024,14 +2024,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.1": {
+            "0.12.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.1",
-                "version_normalized": "1.12.1.0",
+                "version": "0.12.1",
+                "version_normalized": "0.12.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -2210,14 +2210,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.2": {
+            "0.12.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.2",
-                "version_normalized": "1.12.2.0",
+                "version": "0.12.2",
+                "version_normalized": "0.12.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -2396,14 +2396,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.3": {
+            "0.12.3": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.3",
-                "version_normalized": "1.12.3.0",
+                "version": "0.12.3",
+                "version_normalized": "0.12.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -2582,14 +2582,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.3",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.3",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.4": {
+            "0.12.4": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.4",
-                "version_normalized": "1.12.4.0",
+                "version": "0.12.4",
+                "version_normalized": "0.12.4.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -2768,14 +2768,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.4",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.4",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.5": {
+            "0.12.5": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.5",
-                "version_normalized": "1.12.5.0",
+                "version": "0.12.5",
+                "version_normalized": "0.12.5.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -2954,14 +2954,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.5",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.5",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.6": {
+            "0.12.6": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.6",
-                "version_normalized": "1.12.6.0",
+                "version": "0.12.6",
+                "version_normalized": "0.12.6.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -3141,14 +3141,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.6",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.6",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.12.7": {
+            "0.12.7": {
                 "name": "bluenostrum/framework",
-                "version": "1.12.7",
-                "version_normalized": "1.12.7.0",
+                "version": "0.12.7",
+                "version_normalized": "0.12.7.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -3327,14 +3327,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.12.7",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.12.7",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.0": {
+            "0.13.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.0",
-                "version_normalized": "1.13.0.0",
+                "version": "0.13.0",
+                "version_normalized": "0.13.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -3513,14 +3513,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.1": {
+            "0.13.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.1",
-                "version_normalized": "1.13.1.0",
+                "version": "0.13.1",
+                "version_normalized": "0.13.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -3699,14 +3699,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.2": {
+            "0.13.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.2",
-                "version_normalized": "1.13.2.0",
+                "version": "0.13.2",
+                "version_normalized": "0.13.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -3885,14 +3885,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.3": {
+            "0.13.3": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.3",
-                "version_normalized": "1.13.3.0",
+                "version": "0.13.3",
+                "version_normalized": "0.13.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -4071,14 +4071,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.3",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.3",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.4": {
+            "0.13.4": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.4",
-                "version_normalized": "1.13.4.0",
+                "version": "0.13.4",
+                "version_normalized": "0.13.4.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -4257,14 +4257,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.4",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.4",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.5": {
+            "0.13.5": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.5",
-                "version_normalized": "1.13.5.0",
+                "version": "0.13.5",
+                "version_normalized": "0.13.5.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -4443,14 +4443,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.5",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.5",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.6": {
+            "0.13.6": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.6",
-                "version_normalized": "1.13.6.0",
+                "version": "0.13.6",
+                "version_normalized": "0.13.6.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -4629,14 +4629,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.6",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.6",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.7": {
+            "0.13.7": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.7",
-                "version_normalized": "1.13.7.0",
+                "version": "0.13.7",
+                "version_normalized": "0.13.7.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -4815,14 +4815,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.7",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.7",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.13.8": {
+            "0.13.8": {
                 "name": "bluenostrum/framework",
-                "version": "1.13.8",
-                "version_normalized": "1.13.8.0",
+                "version": "0.13.8",
+                "version_normalized": "0.13.8.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5001,14 +5001,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.13.8",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.13.8",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.14.0": {
+            "0.14.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.14.0",
-                "version_normalized": "1.14.0.0",
+                "version": "0.14.0",
+                "version_normalized": "0.14.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5187,14 +5187,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.14.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.14.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.15.0": {
+            "0.15.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.15.0",
-                "version_normalized": "1.15.0.0",
+                "version": "0.15.0",
+                "version_normalized": "0.15.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5345,14 +5345,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.15.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.15.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.15.1": {
+            "0.15.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.15.1",
-                "version_normalized": "1.15.1.0",
+                "version": "0.15.1",
+                "version_normalized": "0.15.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5503,14 +5503,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.15.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.15.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.15.2": {
+            "0.15.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.15.2",
-                "version_normalized": "1.15.2.0",
+                "version": "0.15.2",
+                "version_normalized": "0.15.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5661,14 +5661,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.15.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.15.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.16.0": {
+            "0.16.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.16.0",
-                "version_normalized": "1.16.0.0",
+                "version": "0.16.0",
+                "version_normalized": "0.16.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5820,14 +5820,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.16.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.16.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.16.1": {
+            "0.16.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.16.1",
-                "version_normalized": "1.16.1.0",
+                "version": "0.16.1",
+                "version_normalized": "0.16.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -5979,14 +5979,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.16.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.16.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.17.0": {
+            "0.17.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.17.0",
-                "version_normalized": "1.17.0.0",
+                "version": "0.17.0",
+                "version_normalized": "0.17.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -6138,14 +6138,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.17.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.17.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.18.0": {
+            "0.18.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.18.0",
-                "version_normalized": "1.18.0.0",
+                "version": "0.18.0",
+                "version_normalized": "0.18.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -6290,14 +6290,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.18.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.18.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.18.1": {
+            "0.18.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.18.1",
-                "version_normalized": "1.18.1.0",
+                "version": "0.18.1",
+                "version_normalized": "0.18.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -6442,14 +6442,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.18.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.18.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.19.0": {
+            "0.19.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.19.0",
-                "version_normalized": "1.19.0.0",
+                "version": "0.19.0",
+                "version_normalized": "0.19.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -6594,14 +6594,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.19.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.19.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.19.1": {
+            "0.19.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.19.1",
-                "version_normalized": "1.19.1.0",
+                "version": "0.19.1",
+                "version_normalized": "0.19.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -6747,14 +6747,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.19.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.19.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.2.0": {
+            "0.2.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.2.0",
-                "version_normalized": "1.2.0.0",
+                "version": "0.2.0",
+                "version_normalized": "0.2.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -6929,14 +6929,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.2.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.2.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.20.0": {
+            "0.20.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.20.0",
-                "version_normalized": "1.20.0.0",
+                "version": "0.20.0",
+                "version_normalized": "0.20.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -7097,14 +7097,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.20.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.20.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.21.0": {
+            "0.21.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.21.0",
-                "version_normalized": "1.21.0.0",
+                "version": "0.21.0",
+                "version_normalized": "0.21.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -7265,14 +7265,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.21.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.21.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.22.0": {
+            "0.22.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.22.0",
-                "version_normalized": "1.22.0.0",
+                "version": "0.22.0",
+                "version_normalized": "0.22.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -7433,14 +7433,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.22.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.22.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.23.0": {
+            "0.23.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.23.0",
-                "version_normalized": "1.23.0.0",
+                "version": "0.23.0",
+                "version_normalized": "0.23.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -7601,14 +7601,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.23.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.23.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.23.1": {
+            "0.23.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.23.1",
-                "version_normalized": "1.23.1.0",
+                "version": "0.23.1",
+                "version_normalized": "0.23.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -7769,14 +7769,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.23.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.23.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.23.2": {
+            "0.23.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.23.2",
-                "version_normalized": "1.23.2.0",
+                "version": "0.23.2",
+                "version_normalized": "0.23.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -7937,14 +7937,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.23.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.23.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.23.3": {
+            "0.23.3": {
                 "name": "bluenostrum/framework",
-                "version": "1.23.3",
-                "version_normalized": "1.23.3.0",
+                "version": "0.23.3",
+                "version_normalized": "0.23.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -8105,14 +8105,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.23.3",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.23.3",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.24.0": {
+            "0.24.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.24.0",
-                "version_normalized": "1.24.0.0",
+                "version": "0.24.0",
+                "version_normalized": "0.24.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -8273,14 +8273,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.24.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.24.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.24.1": {
+            "0.24.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.24.1",
-                "version_normalized": "1.24.1.0",
+                "version": "0.24.1",
+                "version_normalized": "0.24.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -8441,14 +8441,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.24.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.24.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.25.0": {
+            "0.25.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.25.0",
-                "version_normalized": "1.25.0.0",
+                "version": "0.25.0",
+                "version_normalized": "0.25.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -8609,14 +8609,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.25.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.25.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.26.0": {
+            "0.26.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.26.0",
-                "version_normalized": "1.26.0.0",
+                "version": "0.26.0",
+                "version_normalized": "0.26.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -8770,14 +8770,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.26.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.26.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.27.0": {
+            "0.27.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.27.0",
-                "version_normalized": "1.27.0.0",
+                "version": "0.27.0",
+                "version_normalized": "0.27.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -8933,14 +8933,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.27.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.27.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.28.0": {
+            "0.28.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.28.0",
-                "version_normalized": "1.28.0.0",
+                "version": "0.28.0",
+                "version_normalized": "0.28.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -9096,14 +9096,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.28.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.28.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.28.1": {
+            "0.28.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.28.1",
-                "version_normalized": "1.28.1.0",
+                "version": "0.28.1",
+                "version_normalized": "0.28.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -9259,14 +9259,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.28.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.28.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.29.0": {
+            "0.29.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.29.0",
-                "version_normalized": "1.29.0.0",
+                "version": "0.29.0",
+                "version_normalized": "0.29.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -9422,14 +9422,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.29.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.29.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.3.0": {
+            "0.3.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.3.0",
-                "version_normalized": "1.3.0.0",
+                "version": "0.3.0",
+                "version_normalized": "0.3.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -9605,14 +9605,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.3.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.3.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.3.1": {
+            "0.3.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.3.1",
-                "version_normalized": "1.3.1.0",
+                "version": "0.3.1",
+                "version_normalized": "0.3.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -9788,14 +9788,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.3.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.3.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.30.0": {
+            "0.30.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.30.0",
-                "version_normalized": "1.30.0.0",
+                "version": "0.30.0",
+                "version_normalized": "0.30.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -9951,14 +9951,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.30.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.30.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.31.0": {
+            "0.31.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.31.0",
-                "version_normalized": "1.31.0.0",
+                "version": "0.31.0",
+                "version_normalized": "0.31.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -10114,14 +10114,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.31.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.31.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.32.0": {
+            "0.32.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.32.0",
-                "version_normalized": "1.32.0.0",
+                "version": "0.32.0",
+                "version_normalized": "0.32.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -10277,14 +10277,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.32.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.32.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.33.0": {
+            "0.33.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.33.0",
-                "version_normalized": "1.33.0.0",
+                "version": "0.33.0",
+                "version_normalized": "0.33.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -10440,14 +10440,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.33.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.33.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.34.0": {
+            "0.34.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.34.0",
-                "version_normalized": "1.34.0.0",
+                "version": "0.34.0",
+                "version_normalized": "0.34.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -10603,14 +10603,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.34.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.34.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.35.0": {
+            "0.35.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.35.0",
-                "version_normalized": "1.35.0.0",
+                "version": "0.35.0",
+                "version_normalized": "0.35.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -10780,14 +10780,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.35.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.35.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.36.0": {
+            "0.36.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.36.0",
-                "version_normalized": "1.36.0.0",
+                "version": "0.36.0",
+                "version_normalized": "0.36.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -10962,14 +10962,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.36.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.36.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.37.0": {
+            "0.37.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.37.0",
-                "version_normalized": "1.37.0.0",
+                "version": "0.37.0",
+                "version_normalized": "0.37.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -11121,14 +11121,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.37.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.37.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.37.1": {
+            "0.37.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.37.1",
-                "version_normalized": "1.37.1.0",
+                "version": "0.37.1",
+                "version_normalized": "0.37.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -11280,14 +11280,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.37.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.37.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.38.0": {
+            "0.38.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.38.0",
-                "version_normalized": "1.38.0.0",
+                "version": "0.38.0",
+                "version_normalized": "0.38.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -11439,14 +11439,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.38.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.38.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.39.0": {
+            "0.39.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.39.0",
-                "version_normalized": "1.39.0.0",
+                "version": "0.39.0",
+                "version_normalized": "0.39.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -11598,14 +11598,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.39.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.39.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.4.0": {
+            "0.4.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.4.0",
-                "version_normalized": "1.4.0.0",
+                "version": "0.4.0",
+                "version_normalized": "0.4.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -11784,14 +11784,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.4.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.4.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.40.0": {
+            "0.40.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.40.0",
-                "version_normalized": "1.40.0.0",
+                "version": "0.40.0",
+                "version_normalized": "0.40.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -11943,14 +11943,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.40.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.40.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.41.0": {
+            "0.41.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.41.0",
-                "version_normalized": "1.41.0.0",
+                "version": "0.41.0",
+                "version_normalized": "0.41.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -12102,14 +12102,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.41.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.41.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.41.1": {
+            "0.41.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.41.1",
-                "version_normalized": "1.41.1.0",
+                "version": "0.41.1",
+                "version_normalized": "0.41.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -12261,14 +12261,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.41.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.41.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.42.0": {
+            "0.42.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.42.0",
-                "version_normalized": "1.42.0.0",
+                "version": "0.42.0",
+                "version_normalized": "0.42.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -12420,14 +12420,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.42.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.42.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.43.0": {
+            "0.43.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.43.0",
-                "version_normalized": "1.43.0.0",
+                "version": "0.43.0",
+                "version_normalized": "0.43.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -12579,14 +12579,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.43.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.43.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.43.1": {
+            "0.43.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.43.1",
-                "version_normalized": "1.43.1.0",
+                "version": "0.43.1",
+                "version_normalized": "0.43.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -12738,14 +12738,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.43.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.43.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.43.2": {
+            "0.43.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.43.2",
-                "version_normalized": "1.43.2.0",
+                "version": "0.43.2",
+                "version_normalized": "0.43.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -12897,14 +12897,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.43.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.43.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.43.3": {
+            "0.43.3": {
                 "name": "bluenostrum/framework",
-                "version": "1.43.3",
-                "version_normalized": "1.43.3.0",
+                "version": "0.43.3",
+                "version_normalized": "0.43.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -13056,14 +13056,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.43.3",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.43.3",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.43.4": {
+            "0.43.4": {
                 "name": "bluenostrum/framework",
-                "version": "1.43.4",
-                "version_normalized": "1.43.4.0",
+                "version": "0.43.4",
+                "version_normalized": "0.43.4.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -13215,14 +13215,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.43.4",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.43.4",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.44.0": {
+            "0.44.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.44.0",
-                "version_normalized": "1.44.0.0",
+                "version": "0.44.0",
+                "version_normalized": "0.44.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -13375,14 +13375,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.44.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.44.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.44.1": {
+            "0.44.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.44.1",
-                "version_normalized": "1.44.1.0",
+                "version": "0.44.1",
+                "version_normalized": "0.44.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -13535,14 +13535,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.44.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.44.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.45.0": {
+            "0.45.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.45.0",
-                "version_normalized": "1.45.0.0",
+                "version": "0.45.0",
+                "version_normalized": "0.45.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -13695,14 +13695,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.45.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.45.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.45.1": {
+            "0.45.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.45.1",
-                "version_normalized": "1.45.1.0",
+                "version": "0.45.1",
+                "version_normalized": "0.45.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -13855,14 +13855,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.45.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.45.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.46.0": {
+            "0.46.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.46.0",
-                "version_normalized": "1.46.0.0",
+                "version": "0.46.0",
+                "version_normalized": "0.46.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -14016,14 +14016,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.46.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.46.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.46.1": {
+            "0.46.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.46.1",
-                "version_normalized": "1.46.1.0",
+                "version": "0.46.1",
+                "version_normalized": "0.46.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -14177,14 +14177,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.46.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.46.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.47.0": {
+            "0.47.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.47.0",
-                "version_normalized": "1.47.0.0",
+                "version": "0.47.0",
+                "version_normalized": "0.47.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -14343,14 +14343,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.47.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.47.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.48.0": {
+            "0.48.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.48.0",
-                "version_normalized": "1.48.0.0",
+                "version": "0.48.0",
+                "version_normalized": "0.48.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -14509,14 +14509,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.48.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.48.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.49.0": {
+            "0.49.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.49.0",
-                "version_normalized": "1.49.0.0",
+                "version": "0.49.0",
+                "version_normalized": "0.49.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -14675,14 +14675,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.49.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.49.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.5.0": {
+            "0.5.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.5.0",
-                "version_normalized": "1.5.0.0",
+                "version": "0.5.0",
+                "version_normalized": "0.5.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -14861,14 +14861,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.5.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.5.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.50.0": {
+            "0.50.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.50.0",
-                "version_normalized": "1.50.0.0",
+                "version": "0.50.0",
+                "version_normalized": "0.50.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -15027,14 +15027,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.50.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.50.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.51.0": {
+            "0.51.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.51.0",
-                "version_normalized": "1.51.0.0",
+                "version": "0.51.0",
+                "version_normalized": "0.51.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -15193,14 +15193,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.51.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.51.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.52.0": {
+            "0.52.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.52.0",
-                "version_normalized": "1.52.0.0",
+                "version": "0.52.0",
+                "version_normalized": "0.52.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -15359,14 +15359,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.52.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.52.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.53.0": {
+            "0.53.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.53.0",
-                "version_normalized": "1.53.0.0",
+                "version": "0.53.0",
+                "version_normalized": "0.53.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -15525,14 +15525,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.53.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.53.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.54.0": {
+            "0.54.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.54.0",
-                "version_normalized": "1.54.0.0",
+                "version": "0.54.0",
+                "version_normalized": "0.54.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -15691,14 +15691,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.54.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.54.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.55.0": {
+            "0.55.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.55.0",
-                "version_normalized": "1.55.0.0",
+                "version": "0.55.0",
+                "version_normalized": "0.55.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -15857,14 +15857,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.55.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.55.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.56.0": {
+            "0.56.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.56.0",
-                "version_normalized": "1.56.0.0",
+                "version": "0.56.0",
+                "version_normalized": "0.56.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -16023,14 +16023,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.56.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.56.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.57.0": {
+            "0.57.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.57.0",
-                "version_normalized": "1.57.0.0",
+                "version": "0.57.0",
+                "version_normalized": "0.57.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -16189,14 +16189,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.57.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.57.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.58.0": {
+            "0.58.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.58.0",
-                "version_normalized": "1.58.0.0",
+                "version": "0.58.0",
+                "version_normalized": "0.58.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -16355,14 +16355,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.58.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.58.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.58.1": {
+            "0.58.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.58.1",
-                "version_normalized": "1.58.1.0",
+                "version": "0.58.1",
+                "version_normalized": "0.58.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -16521,14 +16521,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.58.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.58.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.58.2": {
+            "0.58.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.58.2",
-                "version_normalized": "1.58.2.0",
+                "version": "0.58.2",
+                "version_normalized": "0.58.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -16687,14 +16687,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.58.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.58.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.58.3": {
+            "0.58.3": {
                 "name": "bluenostrum/framework",
-                "version": "1.58.3",
-                "version_normalized": "1.58.3.0",
+                "version": "0.58.3",
+                "version_normalized": "0.58.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -16853,14 +16853,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.58.3",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.58.3",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.59.0": {
+            "0.59.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.59.0",
-                "version_normalized": "1.59.0.0",
+                "version": "0.59.0",
+                "version_normalized": "0.59.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -17019,14 +17019,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.59.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.59.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.6.0": {
+            "0.6.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.6.0",
-                "version_normalized": "1.6.0.0",
+                "version": "0.6.0",
+                "version_normalized": "0.6.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -17205,14 +17205,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.6.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.6.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.6.1": {
+            "0.6.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.6.1",
-                "version_normalized": "1.6.1.0",
+                "version": "0.6.1",
+                "version_normalized": "0.6.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -17391,14 +17391,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.6.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.6.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.60.0": {
+            "0.60.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.60.0",
-                "version_normalized": "1.60.0.0",
+                "version": "0.60.0",
+                "version_normalized": "0.60.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -17557,14 +17557,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.60.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.60.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.61.0": {
+            "0.61.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.61.0",
-                "version_normalized": "1.61.0.0",
+                "version": "0.61.0",
+                "version_normalized": "0.61.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -17724,14 +17724,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.61.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.61.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.62.0": {
+            "0.62.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.62.0",
-                "version_normalized": "1.62.0.0",
+                "version": "0.62.0",
+                "version_normalized": "0.62.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -17891,14 +17891,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.62.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.62.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.62.1": {
+            "0.62.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.62.1",
-                "version_normalized": "1.62.1.0",
+                "version": "0.62.1",
+                "version_normalized": "0.62.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -18058,14 +18058,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.62.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.62.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.63.0": {
+            "0.63.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.63.0",
-                "version_normalized": "1.63.0.0",
+                "version": "0.63.0",
+                "version_normalized": "0.63.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -18225,14 +18225,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.63.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.63.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.64.0": {
+            "0.64.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.64.0",
-                "version_normalized": "1.64.0.0",
+                "version": "0.64.0",
+                "version_normalized": "0.64.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -18396,14 +18396,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.64.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.64.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.65.0": {
+            "0.65.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.65.0",
-                "version_normalized": "1.65.0.0",
+                "version": "0.65.0",
+                "version_normalized": "0.65.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -18567,14 +18567,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.65.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.65.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.65.1": {
+            "0.65.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.65.1",
-                "version_normalized": "1.65.1.0",
+                "version": "0.65.1",
+                "version_normalized": "0.65.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -18777,14 +18777,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.65.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.65.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.66.0": {
+            "0.66.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.66.0",
-                "version_normalized": "1.66.0.0",
+                "version": "0.66.0",
+                "version_normalized": "0.66.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -19320,14 +19320,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.66.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.66.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.66.1": {
+            "0.66.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.66.1",
-                "version_normalized": "1.66.1.0",
+                "version": "0.66.1",
+                "version_normalized": "0.66.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -19843,14 +19843,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.66.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.66.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.67.0": {
+            "0.67.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.67.0",
-                "version_normalized": "1.67.0.0",
+                "version": "0.67.0",
+                "version_normalized": "0.67.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -20324,14 +20324,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.67.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.67.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.68.0": {
+            "0.68.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.68.0",
-                "version_normalized": "1.68.0.0",
+                "version": "0.68.0",
+                "version_normalized": "0.68.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -20810,14 +20810,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.68.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.68.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.69.0": {
+            "0.69.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.69.0",
-                "version_normalized": "1.69.0.0",
+                "version": "0.69.0",
+                "version_normalized": "0.69.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -21292,14 +21292,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.69.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.69.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.7.0": {
+            "0.7.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.7.0",
-                "version_normalized": "1.7.0.0",
+                "version": "0.7.0",
+                "version_normalized": "0.7.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -21478,14 +21478,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.7.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.7.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.70.0": {
+            "0.70.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.70.0",
-                "version_normalized": "1.70.0.0",
+                "version": "0.70.0",
+                "version_normalized": "0.70.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -21960,14 +21960,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.70.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.70.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.71.0": {
+            "0.71.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.71.0",
-                "version_normalized": "1.71.0.0",
+                "version": "0.71.0",
+                "version_normalized": "0.71.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -22442,14 +22442,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.71.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.71.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.72.0": {
+            "0.72.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.72.0",
-                "version_normalized": "1.72.0.0",
+                "version": "0.72.0",
+                "version_normalized": "0.72.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -22924,14 +22924,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.72.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.72.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.73.0": {
+            "0.73.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.73.0",
-                "version_normalized": "1.73.0.0",
+                "version": "0.73.0",
+                "version_normalized": "0.73.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -23406,14 +23406,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.73.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.73.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.74.0": {
+            "0.74.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.74.0",
-                "version_normalized": "1.74.0.0",
+                "version": "0.74.0",
+                "version_normalized": "0.74.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -23888,14 +23888,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.74.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.74.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.75.0": {
+            "0.75.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.75.0",
-                "version_normalized": "1.75.0.0",
+                "version": "0.75.0",
+                "version_normalized": "0.75.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -24370,14 +24370,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.75.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.75.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.75.1": {
+            "0.75.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.75.1",
-                "version_normalized": "1.75.1.0",
+                "version": "0.75.1",
+                "version_normalized": "0.75.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -24852,14 +24852,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.75.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.75.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.76.0": {
+            "0.76.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.76.0",
-                "version_normalized": "1.76.0.0",
+                "version": "0.76.0",
+                "version_normalized": "0.76.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -25334,14 +25334,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.76.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.76.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.77.0": {
+            "0.77.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.77.0",
-                "version_normalized": "1.77.0.0",
+                "version": "0.77.0",
+                "version_normalized": "0.77.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -25816,14 +25816,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.77.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.77.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.78.0": {
+            "0.78.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.78.0",
-                "version_normalized": "1.78.0.0",
+                "version": "0.78.0",
+                "version_normalized": "0.78.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -26298,14 +26298,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.78.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.78.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.79.0": {
+            "0.79.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.79.0",
-                "version_normalized": "1.79.0.0",
+                "version": "0.79.0",
+                "version_normalized": "0.79.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -26780,14 +26780,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.79.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.79.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.8.0": {
+            "0.8.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.8.0",
-                "version_normalized": "1.8.0.0",
+                "version": "0.8.0",
+                "version_normalized": "0.8.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -26967,14 +26967,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.8.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.8.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.8.1": {
+            "0.8.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.8.1",
-                "version_normalized": "1.8.1.0",
+                "version": "0.8.1",
+                "version_normalized": "0.8.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -27154,14 +27154,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.8.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.8.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.80.0": {
+            "0.80.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.80.0",
-                "version_normalized": "1.80.0.0",
+                "version": "0.80.0",
+                "version_normalized": "0.80.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -27636,14 +27636,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.80.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.80.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.81.0": {
+            "0.81.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.81.0",
-                "version_normalized": "1.81.0.0",
+                "version": "0.81.0",
+                "version_normalized": "0.81.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -28118,14 +28118,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.81.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.81.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.82.0": {
+            "0.82.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.82.0",
-                "version_normalized": "1.82.0.0",
+                "version": "0.82.0",
+                "version_normalized": "0.82.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -28606,14 +28606,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.82.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.82.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.82.1": {
+            "0.82.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.82.1",
-                "version_normalized": "1.82.1.0",
+                "version": "0.82.1",
+                "version_normalized": "0.82.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -29094,14 +29094,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.82.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.82.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.83.0": {
+            "0.83.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.83.0",
-                "version_normalized": "1.83.0.0",
+                "version": "0.83.0",
+                "version_normalized": "0.83.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -29585,14 +29585,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.83.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.83.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.84.0": {
+            "0.84.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.84.0",
-                "version_normalized": "1.84.0.0",
+                "version": "0.84.0",
+                "version_normalized": "0.84.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -30076,14 +30076,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.84.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.84.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.85.0": {
+            "0.85.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.85.0",
-                "version_normalized": "1.85.0.0",
+                "version": "0.85.0",
+                "version_normalized": "0.85.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -30570,14 +30570,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.85.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.85.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.85.1": {
+            "0.85.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.85.1",
-                "version_normalized": "1.85.1.0",
+                "version": "0.85.1",
+                "version_normalized": "0.85.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -31064,14 +31064,14 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.85.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.85.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.9.0": {
+            "0.9.0": {
                 "name": "bluenostrum/framework",
-                "version": "1.9.0",
-                "version_normalized": "1.9.0.0",
+                "version": "0.9.0",
+                "version_normalized": "0.9.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -31250,14 +31250,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.9.0",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.9.0",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.9.1": {
+            "0.9.1": {
                 "name": "bluenostrum/framework",
-                "version": "1.9.1",
-                "version_normalized": "1.9.1.0",
+                "version": "0.9.1",
+                "version_normalized": "0.9.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -31436,14 +31436,14 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.9.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.9.1",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
-            "1.9.2": {
+            "0.9.2": {
                 "name": "bluenostrum/framework",
-                "version": "1.9.2",
-                "version_normalized": "1.9.2.0",
+                "version": "0.9.2",
+                "version_normalized": "0.9.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
@@ -31622,7 +31622,7 @@
                 ],
                 "description": "PHP 8.5+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.9.2",
+                    "source": "https://github.com/bluenostrum/framework/tree/0.9.2",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             },
@@ -31633,12 +31633,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/framework.git",
-                    "reference": "d3f2926442e89011efcf37b71fd58d3730ea1013"
+                    "reference": "179f03b85d62659a1f34599f1a996ffffc55dc72"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/d3f2926442e89011efcf37b71fd58d3730ea1013",
-                    "reference": "d3f2926442e89011efcf37b71fd58d3730ea1013",
+                    "url": "https://api.github.com/repos/bluenostrum/framework/zipball/179f03b85d62659a1f34599f1a996ffffc55dc72",
+                    "reference": "179f03b85d62659a1f34599f1a996ffffc55dc72",
                     "shasum": ""
                 },
                 "require": {
@@ -31711,7 +31711,7 @@
                     "bluenostrum/plugin-phpstan": "Required to load extension.neon (the framework's PHPStan rules extend it); private repository, served by the https://bluenostrum.com/packages Composer registry",
                     "phpstan/phpstan": "Required to use the PHPStan rules in extension.neon"
                 },
-                "time": "2026-11-19T16:28:49+00:00",
+                "time": "2026-11-20T08:09:02+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/bluenostrum"
@@ -32117,7 +32117,7 @@
                 ],
                 "description": "PHP 8.5.12+ infrastructure library providing foundational components for CQRS and domain-driven design",
                 "support": {
-                    "source": "https://github.com/bluenostrum/framework/tree/1.85.1",
+                    "source": "https://github.com/bluenostrum/framework/tree/main",
                     "issues": "https://github.com/bluenostrum/framework/issues"
                 }
             }
