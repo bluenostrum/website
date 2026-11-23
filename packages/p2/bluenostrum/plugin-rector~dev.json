@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-rector.git",
-                    "reference": "3a68bd9cc5f2b1a1acb63cbbf411bebe77b97893"
+                    "reference": "89f23ce15f404cc61faff87d8ea1633d915a24f9"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/3a68bd9cc5f2b1a1acb63cbbf411bebe77b97893",
-                    "reference": "3a68bd9cc5f2b1a1acb63cbbf411bebe77b97893",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-rector/zipball/89f23ce15f404cc61faff87d8ea1633d915a24f9",
+                    "reference": "89f23ce15f404cc61faff87d8ea1633d915a24f9",
                     "shasum": ""
                 },
                 "require": {
@@ -39,7 +39,7 @@
                     "symfony/process": "^8.1",
                     "webmozart/assert": "^2.5"
                 },
-                "time": "2026-11-23T14:49:02+00:00",
+                "time": "2026-11-23T14:57:59+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
@@ -139,7 +139,7 @@
                 ],
                 "description": "Shared Rector preset and custom Rector rules for bluenostrum repositories, with the composer rector command",
                 "support": {
-                    "source": "https://github.com/bluenostrum/plugin-rector/tree/2.3.1",
+                    "source": "https://github.com/bluenostrum/plugin-rector/tree/main",
                     "issues": "https://github.com/bluenostrum/plugin-rector/issues"
                 }
             }

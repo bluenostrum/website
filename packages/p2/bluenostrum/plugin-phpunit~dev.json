@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:bluenostrum/plugin-phpunit.git",
-                    "reference": "928784abbdc52003372b9db9524f4072d48514cd"
+                    "reference": "743a1d42ca19b2df47fb5d00edfa8cdbc73d4d35"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/928784abbdc52003372b9db9524f4072d48514cd",
-                    "reference": "928784abbdc52003372b9db9524f4072d48514cd",
+                    "url": "https://api.github.com/repos/bluenostrum/plugin-phpunit/zipball/743a1d42ca19b2df47fb5d00edfa8cdbc73d4d35",
+                    "reference": "743a1d42ca19b2df47fb5d00edfa8cdbc73d4d35",
                     "shasum": ""
                 },
                 "require": {
@@ -31,13 +31,13 @@
                     "bluenostrum/plugin-phpcs": "^2.2.0",
                     "bluenostrum/plugin-phpstan": "^2.6.0",
                     "bluenostrum/plugin-psalm": "^1.3.0",
-                    "bluenostrum/plugin-rector": "^2.3.0",
+                    "bluenostrum/plugin-rector": "^2.3.1",
                     "composer/composer": "^2.11.2",
                     "php-parallel-lint/php-parallel-lint": "^1.4",
                     "roave/security-advisories": "dev-latest",
                     "symfony/console": "^8.1.11"
                 },
-                "time": "2026-11-20T10:15:38+00:00",
+                "time": "2026-11-23T14:55:49+00:00",
                 "default-branch": true,
                 "type": "composer-plugin",
                 "extra": {
